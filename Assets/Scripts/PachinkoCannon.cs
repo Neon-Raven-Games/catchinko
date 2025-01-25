@@ -15,6 +15,10 @@ public class PachinkoCannon : MonoBehaviour
     {
         PointAtMouse();
 
+        // todo, make game fully support controllers
+        // ui to match controller input and mouse.
+        // keep generic like this:
+        
         if (Input.GetMouseButton(0)) UpdateLaunchForce();
         if (!Input.GetMouseButtonUp(0)) return;
 
