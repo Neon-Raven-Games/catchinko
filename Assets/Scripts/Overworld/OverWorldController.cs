@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,30 +41,59 @@ public class OverWorldController : MonoBehaviour
     {
         if (animatedMenu.State != MenuState.Open) return;
 
+        // Kill any existing tweens to prevent interruptions
         _movementTween?.Kill();
         _zoomTween?.Kill();
+
+        // Get target position and bounds
         var targetPosition = OverWorldGameManager.GetLastCameraPosition(targetCatBoss);
-        targetPosition.Item1.z = -8;
+        targetPosition.Item1.z = -8; // Set appropriate Z position
 
-        innerOverWorldLevels = OverWorldGameManager.GetInnerLevels(targetCatBoss);
+        // Get the map bounds for the boss level
+        Rect mapBounds = OverWorldGameManager.GetBossMapBounds(targetCatBoss);
 
-        var target = targetCatBoss;
-        _movementTween = overWorldCamera.transform.DOMove(targetPosition.Item1, 1f)
+        // Calculate clamped ortho size (zoom) and final position
+        float targetOrthoSize = Mathf.Clamp(
+            targetPosition.Item2,
+            zoomMin,
+            Mathf.Min(mapBounds.height / 2f, mapBounds.width / (2f * overWorldCamera.aspect))
+        );
+
+        // Calculate the visible area of the camera at the target zoom level
+        float cameraHeight = targetOrthoSize * 2f;
+        float cameraWidth = cameraHeight * overWorldCamera.aspect;
+        float halfCameraWidth = cameraWidth / 2f;
+        float halfCameraHeight = targetOrthoSize;
+
+        // Clamp the target position to ensure it stays within the bounds
+        Vector3 clampedPosition = targetPosition.Item1;
+        clampedPosition.x = Mathf.Clamp(clampedPosition.x, mapBounds.xMin + halfCameraWidth,
+            mapBounds.xMax - halfCameraWidth);
+        clampedPosition.y = Mathf.Clamp(clampedPosition.y, mapBounds.yMin + halfCameraHeight,
+            mapBounds.yMax - halfCameraHeight);
+
+        // Start the movement tween using the clamped position and size
+        _movementTween = overWorldCamera.transform.DOMove(clampedPosition, 1f)
             .SetEase(Ease.InOutQuad)
-            .OnStart(OverWorldGameManager.SetTravelling).OnComplete(() =>
+            .OnStart(OverWorldGameManager.SetTravelling)
+            .OnComplete(() =>
             {
-                OverWorldGameManager.SetCurrentBoss(target);
-                overWorldBounds = OverWorldGameManager.GetBossMapBounds(target);
+                OverWorldGameManager.SetCurrentBoss(targetCatBoss);
+                overWorldBounds = OverWorldGameManager.GetBossMapBounds(targetCatBoss);
                 OverWorldGameManager.SetPlayerToProperPosition();
             });
 
-        _zoomTween = overWorldCamera.DOOrthoSize(targetPosition.Item2, 1f)
+        // Tween the zoom level to the clamped ortho size
+        _zoomTween = overWorldCamera.DOOrthoSize(targetOrthoSize, 1f)
             .SetEase(Ease.InOutQuad);
     }
 
+
     private void Update()
     {
+        if (!overWorldCamera) overWorldCamera = Camera.main;
         if (animatedMenu.State != MenuState.Closed) return;
+
         HandlePan();
         HandleZoom();
         HandleClickLevel();
@@ -72,16 +102,17 @@ public class OverWorldController : MonoBehaviour
 
     private static void HandleButtonLevel()
     {
+        if (OverWorldGameManager.CurrentLevel == null) return;
         var curLevelData = OverWorldGameManager.CurrentLevel.data;
-        
+
         if (Input.GetKeyUp(KeyCode.W) && curLevelData.northNeighbor != null)
             OverWorldGameManager.ChangeOverWorldLevel(curLevelData.northNeighbor);
 
         if (Input.GetKeyUp(KeyCode.S) && curLevelData.southNeighbor != null)
-                OverWorldGameManager.ChangeOverWorldLevel(curLevelData.southNeighbor);
+            OverWorldGameManager.ChangeOverWorldLevel(curLevelData.southNeighbor);
 
         if (Input.GetKeyUp(KeyCode.A) && curLevelData.westNeighbor != null)
-                OverWorldGameManager.ChangeOverWorldLevel(curLevelData.westNeighbor);
+            OverWorldGameManager.ChangeOverWorldLevel(curLevelData.westNeighbor);
 
         if (!Input.GetKeyUp(KeyCode.D) || !curLevelData.eastNeighbor) return;
         OverWorldGameManager.ChangeOverWorldLevel(curLevelData.eastNeighbor);
@@ -94,18 +125,16 @@ public class OverWorldController : MonoBehaviour
             var mouseWorldPosition = overWorldCamera.ScreenToWorldPoint(Input.mousePosition);
             var hit = Physics2D.Raycast(mouseWorldPosition, Vector2.zero, Mathf.Infinity, levelLayerMask);
 
-            if (hit.collider != null)
-            {
-                var clickedLevel = hit.collider.GetComponent<OverWorldInnerLevel>();
-                if (clickedLevel != null)
-                {
-                    if (OverWorldGameManager.CurrentLevel != clickedLevel)
-                    {
-                        OverWorldGameManager.ChangeOverWorldLevel(clickedLevel);
-                    }
-                }
-            }
+            if (!hit.collider) return;
+
+            var clickedLevel = hit.collider.GetComponent<OverWorldInnerLevel>();
+            if (clickedLevel != null) OverWorldGameManager.ChangeOverWorldLevel(clickedLevel);
         }
+    }
+
+    private void OnEnable()
+    {
+        overWorldCamera = Camera.main;
     }
 
     private void HandleZoom()

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Overworld
 {
@@ -11,6 +12,9 @@ namespace Overworld
         [SerializeField] public List<OverWorldMapData> levels;
         [SerializeField] private AudioSource walkingAudioSource;
         [SerializeField] private AudioSource invalidMoveSound;
+        
+        [SerializeField] private GameObject uIObject;
+        [SerializeField] private GameObject overWorldObject;
 
         private static readonly Dictionary<CatBoss, OverWorldMapData> _levelDictionary = new();
         private static CatBoss _currentBoss;
@@ -18,18 +22,27 @@ namespace Overworld
         private static OverWorldInnerLevel _currentLevel;
         public static OverWorldInnerLevel CurrentLevel => _currentLevel;
 
+        
         public static void ChangeOverWorldLevel(OverWorldInnerLevel level)
         {
-            if (level != CurrentLevel)
-            {
-                TravelToNeighbor(level);
-            }
+            if (level != CurrentLevel) TravelToNeighbor(level);
+            else _instance.player.ShowPanel();
         }
 
         public OverWorldPlayer player;
 
+        private static bool _pathing = false;
         private static IEnumerator WalkPlayerToPath(List<OverWorldInnerLevel> levels, OverWorldPlayer player)
         {
+            // advance two frames to ensure all coroutines are stopped, stop coroutine is trash
+            if (_pathing)
+            {
+                _pathing = false;
+                yield return null;
+                yield return null;
+            }
+            _pathing = true;
+            
             var lerpDuration = 1.5f;
 
             // todo, temp fix. We should not include the first in the collection
@@ -37,21 +50,24 @@ namespace Overworld
 
             foreach (OverWorldInnerLevel level in levels)
             {
-                Vector3 startPos = player.transform.position;
-                Vector3 endPos = level.transform.position;
+                var startPos = player.transform.position;
+                var endPos = level.transform.position;
                 float elapsedTime = 0;
 
                 while (elapsedTime < lerpDuration)
                 {
+                    if (_pathing == false) break;
+                    
                     player.transform.position = Vector3.Lerp(startPos, endPos, elapsedTime / lerpDuration);
                     elapsedTime += Time.deltaTime;
                     yield return null;
                 }
 
+                if (_pathing == false) break;
                 player.transform.position = endPos;
             }
-            
-            player.ShowPanel();
+
+            if (_pathing) player.ShowPanel();
         }
 
         private static void TravelToNeighbor(OverWorldInnerLevel neighbor)
@@ -105,19 +121,40 @@ namespace Overworld
             level.Unlock();
         }
 
+        // can I repopulate an object whenever the build index of the scene is 0 and is loaded?
         public void Awake()
         {
             if (_instance == null)
             {
                 _instance = this;
+                DontDestroyOnLoad(this);
+                SceneManager.sceneLoaded += OnSceneLoaded;
             }
             else
             {
                 Destroy(gameObject);
+                return;
             }
 
             foreach (var level in levels) _levelDictionary.Add(level.boss, level);
             _currentLevel = _levelDictionary[_currentBoss].lastPlayerLevel;
+        }
+
+
+        private void OnSceneLoaded(Scene curScene, LoadSceneMode loadMode)
+        {
+            if (curScene.buildIndex == 0)
+            {
+                player.gameObject.SetActive(true);
+                uIObject.SetActive(true);
+                overWorldObject.SetActive(true);
+            }
+            else
+            {
+                player.gameObject.SetActive(false);
+                uIObject.SetActive(false);
+                overWorldObject.SetActive(false);
+            }
         }
 
         public static CatBoss GetNextBoss()
@@ -139,9 +176,14 @@ namespace Overworld
             (_levelDictionary[boss].initialCameraPosition.position,
                 _levelDictionary[boss].initialCameraOrthoSize);
 
-        public static (Vector3, float) GetLastCameraPosition(CatBoss boss) =>
-            (_levelDictionary[boss].lastPlayerLevel.transform.position,
+        public static (Vector3, float) GetLastCameraPosition(CatBoss boss)
+        {
+            _pathing = false;
+            _instance.player.HidePanel();
+            
+            return (_levelDictionary[boss].lastPlayerLevel.transform.position,
                 _levelDictionary[boss].initialCameraOrthoSize);
+        }
 
         public static Rect GetBossMapBounds(CatBoss boss)
         {
@@ -186,6 +228,10 @@ namespace Overworld
 
         public static void SetPlayerToProperPosition()
         {
+            _pathing = false;
+            _instance.StopCoroutine("WalkPlayerToPath");
+            
+            _instance.player.ShowPanel();
             _instance.player.transform.position = _levelDictionary[_currentBoss].lastPlayerLevel.transform.position;
         }
     }

@@ -11,6 +11,7 @@ public class GoalZone : MonoBehaviour
         {
             Debug.Log("Goal zone: Score += " + scoreValue);
             Destroy(other.gameObject);
+            GameResultsManager.GameOver(true);
         }
     }
 }

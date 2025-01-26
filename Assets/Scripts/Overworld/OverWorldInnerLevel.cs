@@ -30,9 +30,5 @@ namespace Overworld
         private void SetVisualsCompleted()
         {
         }
-
-        public bool CanTravelTo(OverWorldInnerLevel level) => level.data.unlocked &&
-                                                         (level == data.eastNeighbor || level == data.westNeighbor ||
-                                                          level == data.northNeighbor || level == data.southNeighbor);
     }
 }
