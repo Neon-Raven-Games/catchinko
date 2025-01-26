@@ -64,6 +64,7 @@ public class OverworldController : MonoBehaviour
             {
                 OverWorldGameManager.SetCurrentBoss(target);
                 overWorldBounds = OverWorldGameManager.GetBossMapBounds(target);
+                OverWorldGameManager.SetPlayerToProperPosition();
             });
 
         _zoomTween = overWorldCamera.DOOrthoSize(targetPosition.Item2, 1f)
@@ -137,24 +138,14 @@ public class OverworldController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            // Convert the mouse position to world space
-            Vector3 mouseWorldPosition = overWorldCamera.ScreenToWorldPoint(Input.mousePosition);
+            var mouseWorldPosition = overWorldCamera.ScreenToWorldPoint(Input.mousePosition);
+            var hit = Physics2D.Raycast(mouseWorldPosition, Vector2.zero, Mathf.Infinity, levelLayerMask);
 
-            // Perform the raycast
-            RaycastHit2D hit = Physics2D.Raycast(mouseWorldPosition, Vector2.zero, Mathf.Infinity, levelLayerMask);
-
-            // Check if the raycast hit something
             if (hit.collider != null)
             {
-                Debug.Log("Raycast hit: " + hit.collider.name);
-
-                // Attempt to get the OverworldLevel component
                 var clickedLevel = hit.collider.GetComponent<OverWorldInnerLevel>();
                 if (clickedLevel != null)
                 {
-                    Debug.Log("Clicked on level: " + clickedLevel.name);
-
-                    // Trigger the game manager's level change logic
                     if (OverWorldGameManager.CurrentLevel != clickedLevel)
                     {
                         OverWorldGameManager.ChangeOverWorldLevel(clickedLevel);

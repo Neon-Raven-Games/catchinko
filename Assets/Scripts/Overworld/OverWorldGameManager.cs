@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 namespace Overworld
@@ -14,36 +16,80 @@ namespace Overworld
 
         public static void ChangeOverWorldLevel(OverWorldInnerLevel level)
         {
-            if (level != CurrentLevel && CurrentLevel.CanTravelTo(level))
+            if (level != CurrentLevel)
             {
                 TravelToNeighbor(level);
-                Debug.Log("Level changed to: " + level.name);
-                _currentLevel = level;
             }
         }
+
+        public Transform player;
+
+        private static IEnumerator WalkPlayerToPath(List<OverWorldInnerLevel> levels, Transform player)
+        {
+            var lerpDuration = 1.5f;
+
+            // todo, temp fix. We should not include the first in the collection
+            levels.RemoveAt(0);
+
+            foreach (OverWorldInnerLevel level in levels)
+            {
+                Vector3 startPos = player.transform.position;
+                Vector3 endPos = level.transform.position;
+                float elapsedTime = 0;
+
+                while (elapsedTime < lerpDuration)
+                {
+                    player.transform.position = Vector3.Lerp(startPos, endPos, elapsedTime / lerpDuration);
+                    elapsedTime += Time.deltaTime;
+                    yield return null;
+                }
+
+                player.transform.position = endPos;
+            }
+        }
+
+        public AudioSource walkingAudioSource;
+        public AudioSource invalidMoveSound;
 
         private static void TravelToNeighbor(OverWorldInnerLevel neighbor)
         {
-            // make the sounds on the player object and in the travel to method.
-            if (neighbor.data.unlocked)
+            var path = OverWorldPathfinder.FindPath(_currentLevel, neighbor);
+            if (path.Count > 0)
             {
-                // travel the player to neighbor
-
-                // set travelling(true)
-                // player.TravelTo(neighbor.transform.position);
-                // when player finishes, we set travelling(false) from there
-                //
-                // then on player, play a sound
-                // audioSource.PlayOneShot(validMoveSound);
+                _instance.StopCoroutine("WalkPlayerToPath");
+                _instance.StartCoroutine(WalkPlayerToPath(path, _instance.player));
+                _currentLevel = neighbor;
+                ValidMoveFeedback();
+                _levelDictionary[_currentBoss].lastPlayerLevel = neighbor;
             }
             else
             {
-                // nudge the player
-                // player.Nudge();
-                // call sound from player
-                // audioSource.PlayOneShot(invalidMoveSound);
+                InvalidMoveFeedback();
             }
         }
+
+        #region move to feedback system
+
+        // todo, make a feedback system
+
+        /// <summary>
+        /// Valid Move Feedbacks
+        /// </summary>
+        private static void ValidMoveFeedback()
+        {
+            if (_instance.walkingAudioSource) _instance.walkingAudioSource.Play();
+        }
+
+        /// <summary>
+        /// Invalid Move Feedbacks
+        /// </summary>
+        private static void InvalidMoveFeedback()
+        {
+            _instance.player.DOShakePosition(0.25f);
+            if (_instance.invalidMoveSound) _instance.invalidMoveSound.Play();
+        }
+
+        #endregion
 
         public static void SetTravelling()
         {
@@ -89,9 +135,6 @@ namespace Overworld
             (_levelDictionary[boss].initialCameraPosition.position,
                 _levelDictionary[boss].initialCameraOrthoSize);
 
-        // gets the last player camera pos
-        // we need to update the last player level when moving, and scroll this way
-        // if we get off the map bounds, we can make a galaxy bg or something
         public static (Vector3, float) GetLastCameraPosition(CatBoss boss) =>
             (_levelDictionary[boss].lastPlayerLevel.transform.position,
                 _levelDictionary[boss].initialCameraOrthoSize);
@@ -144,6 +187,11 @@ namespace Overworld
         public static List<OverWorldInnerLevel> GetInnerLevels(CatBoss targetCatBoss)
         {
             return _levelDictionary[targetCatBoss].backgroundSprite.parent.GetComponent<OverWorldMap>().levels;
+        }
+
+        public static void SetPlayerToProperPosition()
+        {
+            _instance.player.position = _levelDictionary[_currentBoss].lastPlayerLevel.transform.position;
         }
     }
 }
