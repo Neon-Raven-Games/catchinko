@@ -41,38 +41,30 @@ public class OverWorldController : MonoBehaviour
     {
         if (animatedMenu.State != MenuState.Open) return;
 
-        // Kill any existing tweens to prevent interruptions
         _movementTween?.Kill();
         _zoomTween?.Kill();
 
-        // Get target position and bounds
         var targetPosition = OverWorldGameManager.GetLastCameraPosition(targetCatBoss);
         targetPosition.Item1.z = -8; // Set appropriate Z position
 
-        // Get the map bounds for the boss level
-        Rect mapBounds = OverWorldGameManager.GetBossMapBounds(targetCatBoss);
-
-        // Calculate clamped ortho size (zoom) and final position
-        float targetOrthoSize = Mathf.Clamp(
+        var mapBounds = OverWorldGameManager.GetBossMapBounds(targetCatBoss);
+        var targetOrthoSize = Mathf.Clamp(
             targetPosition.Item2,
             zoomMin,
             Mathf.Min(mapBounds.height / 2f, mapBounds.width / (2f * overWorldCamera.aspect))
         );
 
-        // Calculate the visible area of the camera at the target zoom level
-        float cameraHeight = targetOrthoSize * 2f;
-        float cameraWidth = cameraHeight * overWorldCamera.aspect;
-        float halfCameraWidth = cameraWidth / 2f;
-        float halfCameraHeight = targetOrthoSize;
+        var cameraHeight = targetOrthoSize * 2f;
+        var cameraWidth = cameraHeight * overWorldCamera.aspect;
+        var halfCameraWidth = cameraWidth / 2f;
+        var halfCameraHeight = targetOrthoSize;
 
-        // Clamp the target position to ensure it stays within the bounds
-        Vector3 clampedPosition = targetPosition.Item1;
+        var clampedPosition = targetPosition.Item1;
         clampedPosition.x = Mathf.Clamp(clampedPosition.x, mapBounds.xMin + halfCameraWidth,
             mapBounds.xMax - halfCameraWidth);
         clampedPosition.y = Mathf.Clamp(clampedPosition.y, mapBounds.yMin + halfCameraHeight,
             mapBounds.yMax - halfCameraHeight);
 
-        // Start the movement tween using the clamped position and size
         _movementTween = overWorldCamera.transform.DOMove(clampedPosition, 1f)
             .SetEase(Ease.InOutQuad)
             .OnStart(OverWorldGameManager.SetTravelling)
@@ -83,7 +75,6 @@ public class OverWorldController : MonoBehaviour
                 OverWorldGameManager.SetPlayerToProperPosition();
             });
 
-        // Tween the zoom level to the clamped ortho size
         _zoomTween = overWorldCamera.DOOrthoSize(targetOrthoSize, 1f)
             .SetEase(Ease.InOutQuad);
     }
