@@ -23,7 +23,7 @@ public class OverWorldMapData
 public class OverWorldInnerLevelData
 {
     public int index;
-
+    
     public OverWorldInnerLevel eastNeighbor;
     public OverWorldInnerLevel westNeighbor;
     public OverWorldInnerLevel northNeighbor;

@@ -10,15 +10,15 @@ public class BossMouseEventHandler : MonoBehaviour, IPointerEnterHandler, IPoint
     [SerializeField] private CatBoss boss;
 
     [SerializeField] private GameObject highlightObject;
-    private OverworldController _overworldController;
+    private OverWorldController _overWorldController;
     public void Initialize(CatBoss initBoss, AnimatedMenu menu)
     {
         boss = initBoss;
         animatedMenu = menu;
-        _overworldController = FindObjectOfType<OverworldController>();
+        _overWorldController = FindObjectOfType<OverWorldController>();
         
         onMouseEnter.AddListener((_ => highlightObject.SetActive(true)));
-        onMouseEnter.AddListener(_overworldController.TravelToLevel);
+        onMouseEnter.AddListener(_overWorldController.TravelToLevel);
         
         onMouseExit.AddListener(() => highlightObject.SetActive(false));
         

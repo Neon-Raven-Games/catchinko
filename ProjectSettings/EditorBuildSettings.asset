@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/OverWorld.unity
+    guid: 6b9aedeb0a4c2ea4b8e0334064c557ee
+  - enabled: 1
     path: Assets/Scenes/PachinkoOne.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/PachinkoTwo.unity
+    guid: 5822ea53996271748ac51312e54977d6
   m_configObjects: {}

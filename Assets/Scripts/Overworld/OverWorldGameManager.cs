@@ -7,7 +7,11 @@ namespace Overworld
 {
     public class OverWorldGameManager : MonoBehaviour
     {
+        // todo, this is public because the editor script needed it.
         [SerializeField] public List<OverWorldMapData> levels;
+        [SerializeField] private AudioSource walkingAudioSource;
+        [SerializeField] private AudioSource invalidMoveSound;
+
         private static readonly Dictionary<CatBoss, OverWorldMapData> _levelDictionary = new();
         private static CatBoss _currentBoss;
         private static OverWorldGameManager _instance;
@@ -22,9 +26,9 @@ namespace Overworld
             }
         }
 
-        public Transform player;
+        public OverWorldPlayer player;
 
-        private static IEnumerator WalkPlayerToPath(List<OverWorldInnerLevel> levels, Transform player)
+        private static IEnumerator WalkPlayerToPath(List<OverWorldInnerLevel> levels, OverWorldPlayer player)
         {
             var lerpDuration = 1.5f;
 
@@ -46,16 +50,16 @@ namespace Overworld
 
                 player.transform.position = endPos;
             }
+            
+            player.ShowPanel();
         }
-
-        public AudioSource walkingAudioSource;
-        public AudioSource invalidMoveSound;
 
         private static void TravelToNeighbor(OverWorldInnerLevel neighbor)
         {
             var path = OverWorldPathfinder.FindPath(_currentLevel, neighbor);
             if (path.Count > 0)
             {
+                _instance.player.HidePanel();
                 _instance.StopCoroutine("WalkPlayerToPath");
                 _instance.StartCoroutine(WalkPlayerToPath(path, _instance.player));
                 _currentLevel = neighbor;
@@ -85,7 +89,7 @@ namespace Overworld
         /// </summary>
         private static void InvalidMoveFeedback()
         {
-            _instance.player.DOShakePosition(0.25f);
+            _instance.player.transform.DOShakePosition(0.25f);
             if (_instance.invalidMoveSound) _instance.invalidMoveSound.Play();
         }
 
@@ -139,15 +143,6 @@ namespace Overworld
             (_levelDictionary[boss].lastPlayerLevel.transform.position,
                 _levelDictionary[boss].initialCameraOrthoSize);
 
-        public static void SetLastPlayerLevel(OverWorldInnerLevel level) =>
-            _levelDictionary[_currentBoss].lastPlayerLevel = level;
-
-        public static int GetLastPlayerLevelIndex() =>
-            _levelDictionary[_currentBoss].lastPlayerLevel.data.index;
-
-        public static int GetLastPlayerLevelIndex(CatBoss boss) =>
-            _levelDictionary[boss].lastPlayerLevel.data.index;
-
         public static Rect GetBossMapBounds(CatBoss boss)
         {
             var target = _levelDictionary[boss].backgroundSprite;
@@ -191,7 +186,7 @@ namespace Overworld
 
         public static void SetPlayerToProperPosition()
         {
-            _instance.player.position = _levelDictionary[_currentBoss].lastPlayerLevel.transform.position;
+            _instance.player.transform.position = _levelDictionary[_currentBoss].lastPlayerLevel.transform.position;
         }
     }
 }

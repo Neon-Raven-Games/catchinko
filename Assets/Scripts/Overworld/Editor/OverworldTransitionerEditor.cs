@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-[CustomEditor(typeof(OverworldController))]
+[CustomEditor(typeof(OverWorldController))]
     public class OverworldTransitionerEditor :  Editor
     {
         public override void OnInspectorGUI()

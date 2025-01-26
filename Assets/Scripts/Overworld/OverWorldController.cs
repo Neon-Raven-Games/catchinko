@@ -3,27 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using Overworld;
-using UnityEngine.Serialization;
 
-public class OverworldController : MonoBehaviour
+public class OverWorldController : MonoBehaviour
 {
     [SerializeField] private List<OverWorldInnerLevel> innerOverWorldLevels;
-    private int _currentIndex;
-
-    [FormerlySerializedAs("overworldCamera")] [SerializeField]
-    private Camera overWorldCamera;
-
+    [SerializeField] private Camera overWorldCamera;
     [SerializeField] private Rect overWorldBounds;
-
-
     [SerializeField] private float zoomMin = 5f;
-    [SerializeField] private float zoomMax = 20f;
     [SerializeField] private float zoomSpeed = 5f;
-    [SerializeField] private LayerMask levelLayerMask; // Layer mask for levels
-
+    [SerializeField] private LayerMask levelLayerMask;
     [SerializeField] private AnimatedMenu animatedMenu;
 
-    private Vector3 dragOrigin; // Starting point of the drag
+    private int _currentIndex;
+    private Vector3 _dragOrigin;
 
     private Tween _movementTween;
     private Tween _zoomTween;
@@ -53,10 +45,8 @@ public class OverworldController : MonoBehaviour
         var targetPosition = OverWorldGameManager.GetLastCameraPosition(targetCatBoss);
         targetPosition.Item1.z = -8;
 
-        // populate the inner levels and last index
         innerOverWorldLevels = OverWorldGameManager.GetInnerLevels(targetCatBoss);
-        _currentIndex = OverWorldGameManager.GetLastPlayerLevelIndex(targetCatBoss);
-        
+
         var target = targetCatBoss;
         _movementTween = overWorldCamera.transform.DOMove(targetPosition.Item1, 1f)
             .SetEase(Ease.InOutQuad)
@@ -80,58 +70,21 @@ public class OverworldController : MonoBehaviour
         HandleButtonLevel();
     }
 
-    private void HandleButtonLevel()
+    private static void HandleButtonLevel()
     {
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            if (innerOverWorldLevels[_currentIndex].data.northNeighbor != null)
-            {
-                OverWorldGameManager.SetLastPlayerLevel(innerOverWorldLevels[_currentIndex].data.northNeighbor);
-                Debug.Log(innerOverWorldLevels[_currentIndex].data.northNeighbor.data.index);
-            }
-            else
-            {
-                Debug.Log("No north neighbor found");
-            }
-        }
+        var curLevelData = OverWorldGameManager.CurrentLevel.data;
+        
+        if (Input.GetKeyUp(KeyCode.W) && curLevelData.northNeighbor != null)
+            OverWorldGameManager.ChangeOverWorldLevel(curLevelData.northNeighbor);
 
-        if (Input.GetKeyUp(KeyCode.S))
-        {
-            if (innerOverWorldLevels[_currentIndex].data.southNeighbor != null)
-            {
-                OverWorldGameManager.SetLastPlayerLevel(innerOverWorldLevels[_currentIndex].data.southNeighbor);
-                Debug.Log(innerOverWorldLevels[_currentIndex].data.southNeighbor.data.index);
-            }
-            else
-            {
-                Debug.Log("No south neighbor found");
-            }
-        }
+        if (Input.GetKeyUp(KeyCode.S) && curLevelData.southNeighbor != null)
+                OverWorldGameManager.ChangeOverWorldLevel(curLevelData.southNeighbor);
 
-        if (Input.GetKeyUp(KeyCode.A))
-        {
-            if (innerOverWorldLevels[_currentIndex].data.westNeighbor != null)
-            {
-                OverWorldGameManager.SetLastPlayerLevel(innerOverWorldLevels[_currentIndex].data.westNeighbor);
-                Debug.Log(innerOverWorldLevels[_currentIndex].data.westNeighbor.data.index);
-            }
-            else
-            {
-                Debug.Log("No west neighbor found");
-            }
-        }
+        if (Input.GetKeyUp(KeyCode.A) && curLevelData.westNeighbor != null)
+                OverWorldGameManager.ChangeOverWorldLevel(curLevelData.westNeighbor);
 
-        if (Input.GetKeyUp(KeyCode.D))
-        {
-            if (innerOverWorldLevels[_currentIndex].data.eastNeighbor == null)
-            {
-                Debug.Log("No east neighbor found");
-                return;
-            }
-
-            OverWorldGameManager.SetLastPlayerLevel(innerOverWorldLevels[_currentIndex].data.eastNeighbor);
-            Debug.Log(innerOverWorldLevels[_currentIndex].data.eastNeighbor.data.index);
-        }
+        if (!Input.GetKeyUp(KeyCode.D) || !curLevelData.eastNeighbor) return;
+        OverWorldGameManager.ChangeOverWorldLevel(curLevelData.eastNeighbor);
     }
 
     private void HandleClickLevel()
@@ -193,12 +146,12 @@ public class OverworldController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(1))
         {
-            dragOrigin = overWorldCamera.ScreenToWorldPoint(Input.mousePosition);
+            _dragOrigin = overWorldCamera.ScreenToWorldPoint(Input.mousePosition);
         }
 
         if (!Input.GetMouseButton(1)) return;
 
-        var difference = dragOrigin - overWorldCamera.ScreenToWorldPoint(Input.mousePosition);
+        var difference = _dragOrigin - overWorldCamera.ScreenToWorldPoint(Input.mousePosition);
         var newPosition = overWorldCamera.transform.position + difference;
 
         var cameraHeight = overWorldCamera.orthographicSize * 2f;
