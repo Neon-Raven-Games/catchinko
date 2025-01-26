@@ -7,17 +7,15 @@ using UnityEngine.Serialization;
 
 public class OverworldController : MonoBehaviour
 {
-    private int LevelCount => overWorldLevels.Count;
+    [SerializeField] private List<OverWorldInnerLevel> innerOverWorldLevels;
+    private int _currentIndex;
 
-    [SerializeField] private List<GameObject> overWorldLevels;
-    [SerializeField] private List<OverworldLevel> innerOverWorldLevels;
-    [FormerlySerializedAs("overworldCamera")] 
-    [SerializeField] private Camera overWorldCamera;
-    [SerializeField] private Transform background;
-    
+    [FormerlySerializedAs("overworldCamera")] [SerializeField]
+    private Camera overWorldCamera;
+
     [SerializeField] private Rect overWorldBounds;
-    
-    
+
+
     [SerializeField] private float zoomMin = 5f;
     [SerializeField] private float zoomMax = 20f;
     [SerializeField] private float zoomSpeed = 5f;
@@ -26,88 +24,54 @@ public class OverworldController : MonoBehaviour
     [SerializeField] private AnimatedMenu animatedMenu;
 
     private Vector3 dragOrigin; // Starting point of the drag
-    
-    private Vector3 _startPosition;
-    private float _startOrthographicSize;
-    
-    private Tween _movementTween;
 
-    private int _currentIndex = 0;
+    private Tween _movementTween;
+    private Tween _zoomTween;
 
     private void Start()
     {
-        if (overWorldCamera != null) _startPosition = overWorldCamera.transform.position;
-        overWorldBounds = GetRectFromTransform(background);
-        _startOrthographicSize = overWorldCamera.orthographicSize;
-        OverWorldGameManager.SetCurrentLevel(innerOverWorldLevels[0]);
+        // todo, once serialized, populate this before default to first
+        SetBossAndGetBounds(CatBoss.JesterClaw);
     }
-    private Rect GetRectFromTransform(Transform target)
+
+    private void SetBossAndGetBounds(CatBoss boss)
     {
-        // Check if the target has a SpriteRenderer
-        var spriteRenderer = target.GetComponent<SpriteRenderer>();
-        
-        if (spriteRenderer != null)
-        {
-            var size = spriteRenderer.size;
-            size.x *= target.transform.localScale.x;
-            size.y *= target.transform.localScale.y;
-            
-            Vector2 position = target.position;
-            var xMin = position.x - size.x / 2;
-            var yMin = position.y - size.y / 2;
-
-            return new Rect(xMin, yMin, size.x, size.y);
-        }
-
-        Debug.LogWarning("Transform does not have a SpriteRenderer. Using default bounds.");
-        return new Rect(-50, -50, 100, 100);
+        OverWorldGameManager.SetCurrentBoss(boss);
+        overWorldBounds = OverWorldGameManager.GetBossMapBounds(boss);
     }
-    
+
     /// <summary>
     /// Scrolls to the specified level index using DoTween.
     /// </summary>
-    /// <param name="index">The target level index to scroll to.</param>
-    public void TravelToLevel(int index)
+    /// <param name="targetCatBoss">The target level index to scroll to.</param>
+    public void TravelToLevel(CatBoss targetCatBoss)
     {
-        // hardlocks the camera transitioning to menu state being open.
         if (animatedMenu.State != MenuState.Open) return;
-        
-        if (index < 0 || index >= LevelCount)
-        {
-            Debug.LogError("Invalid level index.");
-            return;
-        }
 
         _movementTween?.Kill();
         _zoomTween?.Kill();
-        var targetPosition = _startPosition + new Vector3(0, index * 10f, 0);
+        var targetPosition = OverWorldGameManager.GetLastCameraPosition(targetCatBoss);
+        targetPosition.Item1.z = -8;
 
-        _movementTween = overWorldCamera.transform.DOMove(targetPosition, 1f)
-            .SetEase(Ease.InOutQuad)
-            .OnStart(() =>
-            {
-                // blur effects maybe?
-            }).OnComplete(() => { _currentIndex = index; });
+        // populate the inner levels and last index
+        innerOverWorldLevels = OverWorldGameManager.GetInnerLevels(targetCatBoss);
+        _currentIndex = OverWorldGameManager.GetLastPlayerLevelIndex(targetCatBoss);
         
-        _zoomTween = overWorldCamera.DOOrthoSize(_startOrthographicSize, 1f)
+        var target = targetCatBoss;
+        _movementTween = overWorldCamera.transform.DOMove(targetPosition.Item1, 1f)
+            .SetEase(Ease.InOutQuad)
+            .OnStart(OverWorldGameManager.SetTravelling).OnComplete(() =>
+            {
+                OverWorldGameManager.SetCurrentBoss(target);
+                overWorldBounds = OverWorldGameManager.GetBossMapBounds(target);
+            });
+
+        _zoomTween = overWorldCamera.DOOrthoSize(targetPosition.Item2, 1f)
             .SetEase(Ease.InOutQuad);
-    }
-    
-    private Tween _zoomTween;
-
-    private void GoUpLevel()
-    {
-        if (LevelCount > _currentIndex + 1) TravelToLevel(_currentIndex + 1);
-    }
-
-    private void GoDownLevel()
-    {
-        if (_currentIndex - 1 >= 0) TravelToLevel(_currentIndex - 1);
     }
 
     private void Update()
     {
-        // hard lock controls to menu state being closed.
         if (animatedMenu.State != MenuState.Closed) return;
         HandlePan();
         HandleZoom();
@@ -121,6 +85,7 @@ public class OverworldController : MonoBehaviour
         {
             if (innerOverWorldLevels[_currentIndex].data.northNeighbor != null)
             {
+                OverWorldGameManager.SetLastPlayerLevel(innerOverWorldLevels[_currentIndex].data.northNeighbor);
                 Debug.Log(innerOverWorldLevels[_currentIndex].data.northNeighbor.data.index);
             }
             else
@@ -128,11 +93,12 @@ public class OverworldController : MonoBehaviour
                 Debug.Log("No north neighbor found");
             }
         }
-        
+
         if (Input.GetKeyUp(KeyCode.S))
         {
             if (innerOverWorldLevels[_currentIndex].data.southNeighbor != null)
             {
+                OverWorldGameManager.SetLastPlayerLevel(innerOverWorldLevels[_currentIndex].data.southNeighbor);
                 Debug.Log(innerOverWorldLevels[_currentIndex].data.southNeighbor.data.index);
             }
             else
@@ -140,11 +106,12 @@ public class OverworldController : MonoBehaviour
                 Debug.Log("No south neighbor found");
             }
         }
-        
+
         if (Input.GetKeyUp(KeyCode.A))
         {
             if (innerOverWorldLevels[_currentIndex].data.westNeighbor != null)
             {
+                OverWorldGameManager.SetLastPlayerLevel(innerOverWorldLevels[_currentIndex].data.westNeighbor);
                 Debug.Log(innerOverWorldLevels[_currentIndex].data.westNeighbor.data.index);
             }
             else
@@ -152,20 +119,20 @@ public class OverworldController : MonoBehaviour
                 Debug.Log("No west neighbor found");
             }
         }
-        
+
         if (Input.GetKeyUp(KeyCode.D))
         {
-            
             if (innerOverWorldLevels[_currentIndex].data.eastNeighbor == null)
             {
                 Debug.Log("No east neighbor found");
                 return;
             }
+
+            OverWorldGameManager.SetLastPlayerLevel(innerOverWorldLevels[_currentIndex].data.eastNeighbor);
             Debug.Log(innerOverWorldLevels[_currentIndex].data.eastNeighbor.data.index);
         }
-        
     }
-    
+
     private void HandleClickLevel()
     {
         if (Input.GetMouseButtonDown(0))
@@ -182,7 +149,7 @@ public class OverworldController : MonoBehaviour
                 Debug.Log("Raycast hit: " + hit.collider.name);
 
                 // Attempt to get the OverworldLevel component
-                var clickedLevel = hit.collider.GetComponent<OverworldLevel>();
+                var clickedLevel = hit.collider.GetComponent<OverWorldInnerLevel>();
                 if (clickedLevel != null)
                 {
                     Debug.Log("Clicked on level: " + clickedLevel.name);
@@ -203,18 +170,28 @@ public class OverworldController : MonoBehaviour
         if (scroll != 0f)
         {
             var newSize = overWorldCamera.orthographicSize - scroll * zoomSpeed;
-            newSize = Mathf.Clamp(newSize, zoomMin, zoomMax);
+
+            var maxZoomOutSize = Mathf.Min(
+                (overWorldBounds.height / 2f),
+                (overWorldBounds.width / (2f * overWorldCamera.aspect))
+            );
+
+            // can we account for the bounds here? if it's too small for zoom out, we should not be able to scroll out
+            newSize = Mathf.Clamp(newSize, zoomMin, maxZoomOutSize);
 
             var cameraHeight = newSize * 2f; // Total height of the camera's view
             var cameraWidth = cameraHeight * overWorldCamera.aspect; // Total width of the camera's view
+
 
             var halfCameraWidth = cameraWidth / 2f;
             var halfCameraHeight = newSize;
 
             var cameraPosition = overWorldCamera.transform.position;
 
-            cameraPosition.x = Mathf.Clamp(cameraPosition.x, overWorldBounds.xMin + halfCameraWidth, overWorldBounds.xMax - halfCameraWidth);
-            cameraPosition.y = Mathf.Clamp(cameraPosition.y, overWorldBounds.yMin + halfCameraHeight, overWorldBounds.yMax - halfCameraHeight);
+            cameraPosition.x = Mathf.Clamp(cameraPosition.x, overWorldBounds.xMin + halfCameraWidth,
+                overWorldBounds.xMax - halfCameraWidth);
+            cameraPosition.y = Mathf.Clamp(cameraPosition.y, overWorldBounds.yMin + halfCameraHeight,
+                overWorldBounds.yMax - halfCameraHeight);
 
             overWorldCamera.orthographicSize = newSize;
             overWorldCamera.transform.position = cameraPosition;
@@ -229,7 +206,7 @@ public class OverworldController : MonoBehaviour
         }
 
         if (!Input.GetMouseButton(1)) return;
-        
+
         var difference = dragOrigin - overWorldCamera.ScreenToWorldPoint(Input.mousePosition);
         var newPosition = overWorldCamera.transform.position + difference;
 
@@ -239,34 +216,11 @@ public class OverworldController : MonoBehaviour
         var halfCameraWidth = cameraWidth / 2f;
         var halfCameraHeight = overWorldCamera.orthographicSize;
 
-        newPosition.x = Mathf.Clamp(newPosition.x, overWorldBounds.xMin + halfCameraWidth, overWorldBounds.xMax - halfCameraWidth);
-        newPosition.y = Mathf.Clamp(newPosition.y, overWorldBounds.yMin + halfCameraHeight, overWorldBounds.yMax - halfCameraHeight);
+        newPosition.x = Mathf.Clamp(newPosition.x, overWorldBounds.xMin + halfCameraWidth,
+            overWorldBounds.xMax - halfCameraWidth);
+        newPosition.y = Mathf.Clamp(newPosition.y, overWorldBounds.yMin + halfCameraHeight,
+            overWorldBounds.yMax - halfCameraHeight);
 
         overWorldCamera.transform.position = newPosition;
-    }
-
-    /// <summary>
-    /// Example method to dynamically test transitions.
-    /// </summary>
-    public void TestDynamicTransitions()
-    {
-        StartCoroutine(TestTravelSequence());
-    }
-
-    /// <summary>
-    /// Whenever we get more levels, lets stress test hard here.
-    /// </summary>
-    /// <returns></returns>
-    private IEnumerator TestTravelSequence()
-    {
-        TravelToLevel(1);
-        yield return new WaitForSeconds(0.5f); // Test interrupt after 0.5 seconds
-        TravelToLevel(2);
-        yield return new WaitForSeconds(1f); // Allow transition to finish
-        TravelToLevel(0);
-        yield return new WaitForSeconds(0.2f);
-        TravelToLevel(2);
-        yield return new WaitForSeconds(0.5f);
-        TravelToLevel(0);
     }
 }

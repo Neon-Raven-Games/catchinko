@@ -11,3 +11,17 @@ public enum MenuType
     HoverActivated,
     ClickActivated
 }
+
+public enum CatBoss
+{
+    JesterClaw,
+    DarthPawder,
+    Meowgneto,
+    FurrmioneFrost,
+    PawlyQuinn,
+    Thanoscat,
+    Purrserion,
+    ClawFace,
+    Venomeow,
+    Catnipoleon
+}

@@ -75,9 +75,15 @@ namespace UI.MenuStates
             }
 
             MenuRectTransform.anchoredPosition = targetPosition;
-            if (targetPosition == TargetPosition) ChangeState(MenuState.Open);
+            if (targetPosition == TargetPosition)
+            {
+                yield return new WaitForSeconds(0.25f);
+                ChangeState(MenuState.Open);
+            }
             if (targetPosition == OriginalPosition) ChangeState(MenuState.Closed);
         }
+        
+        
 
         protected bool MouseOutOfBounds() => MouseOutOfBounds(Screen.height, 0) && MouseOnScreen();
 

@@ -1,4 +1,5 @@
 using System.Collections;
+using Overworld;
 using TMPro;
 using UI.MenuStates;
 using UnityEngine;
@@ -10,10 +11,9 @@ public class AnimatedMenu : MonoBehaviour
 [Header("Scrolling")]
     [SerializeField] private float scrollSpeed = 1f;
     [SerializeField] private ScrollRect scrollView;
-    [SerializeField] private float bottomPadding = 15;
+    [SerializeField] private float originalY;
 
     private Coroutine _scrollCoroutine;
-    private VerticalLayoutGroup _layoutGroup;
     public void SetScrollingUp()
     {
         if (_scrollCoroutine != null) StopCoroutine(_scrollCoroutine);
@@ -37,14 +37,12 @@ public class AnimatedMenu : MonoBehaviour
 
     private IEnumerator ScrollPanel(float value)
     {
-        var padding = _layoutGroup.padding.top - bottomPadding;
         while (true)
         {
             var contentPosition = scrollView.content.anchoredPosition;
             contentPosition.y += value * Time.deltaTime;
 
-            var contentHeight = scrollView.content.rect.height - padding;
-            contentPosition.y = Mathf.Clamp(contentPosition.y, 0, contentHeight);
+            contentPosition.y = Mathf.Clamp(contentPosition.y, 0, originalY);
             scrollView.content.anchoredPosition = contentPosition;
             yield return null;
         }
@@ -99,14 +97,18 @@ public class AnimatedMenu : MonoBehaviour
 
     private void Start()
     {
-        _layoutGroup = scrollView.content.GetComponent<VerticalLayoutGroup>();
+        originalY = scrollView.content.anchoredPosition.y;
         rectTransform = GetComponent<RectTransform>();
         originalPosition = rectTransform.anchoredPosition;
     }
 
-    void Update()
+    private void Update()
     {
         currentState.OnUpdate();
+        
+        if (currentState.state != MenuState.Open) return;
+        if (Input.GetKeyUp(KeyCode.W)) OverWorldGameManager.SetCurrentBoss(OverWorldGameManager.GetNextBoss());
+        if (Input.GetKeyUp(KeyCode.S)) OverWorldGameManager.SetCurrentBoss(OverWorldGameManager.GetPreviousBoss());
     }
 
     public void ChangeState(MenuState state) =>

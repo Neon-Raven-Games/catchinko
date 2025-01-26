@@ -1,26 +1,11 @@
-﻿using System;
-using UnityEngine;
-using UnityEngine.EventSystems;
+﻿using UnityEngine;
 
 namespace Overworld
 {
-    [Serializable]
-    public class OverWorldLevelData
+
+    public class OverWorldInnerLevel : MonoBehaviour
     {
-        public int index;
-
-        public OverworldLevel eastNeighbor;
-        public OverworldLevel westNeighbor;
-        public OverworldLevel northNeighbor;
-        public OverworldLevel southNeighbor;
-
-        public bool unlocked;
-        public bool completed;
-    }
-
-    public class OverworldLevel : MonoBehaviour, IPointerUpHandler
-    {
-        public OverWorldLevelData data;
+        public OverWorldInnerLevelData data;
 
         public void Unlock()
         {
@@ -46,13 +31,8 @@ namespace Overworld
         {
         }
 
-        public bool CanTravelTo(OverworldLevel level) => level.data.unlocked &&
+        public bool CanTravelTo(OverWorldInnerLevel level) => level.data.unlocked &&
                                                          (level == data.eastNeighbor || level == data.westNeighbor ||
                                                           level == data.northNeighbor || level == data.southNeighbor);
-
-        public void OnPointerUp(PointerEventData eventData)
-        {
-            Debug.Log("Clicked on level from event handler: " + data.index);
-        }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using UnityEditor;
-using UnityEngine;
 
 [CustomEditor(typeof(OverworldController))]
     public class OverworldTransitionerEditor :  Editor
@@ -7,11 +6,6 @@ using UnityEngine;
         public override void OnInspectorGUI()
         {
             base.OnInspectorGUI();
-            OverworldController overworldController = (OverworldController) target;
-            if (GUILayout.Button("Test Dynamic Transitions"))
-            {
-                overworldController.TestDynamicTransitions();
-            }
-            
+            // OverworldController overworldController = (OverworldController) target;
         }
     }

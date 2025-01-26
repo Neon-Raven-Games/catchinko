@@ -7,7 +7,7 @@ public class MouseOverEventHandler : MonoBehaviour, IPointerEnterHandler, IPoint
     [SerializeField] private AnimatedMenu animatedMenu;
     [SerializeField] private UnityEvent onMouseEnter;
     [SerializeField] private UnityEvent onMouseExit;
-
+    
     /// <summary>
     /// Called when the mouse pointer enters the UI element.
     /// </summary>
