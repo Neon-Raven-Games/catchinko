@@ -85,7 +85,7 @@ public class BallDropper : MonoBehaviour
 
     private void PlayDespawnEffectAndDestroy()
     {
-        
+        _catBall.Despawn();
     }
 
     private void OnDrawGizmos()

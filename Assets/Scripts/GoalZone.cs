@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class GoalZone : MonoBehaviour
 {
-    [SerializeField] private int scoreValue = 1;
+    public int scoreValue = 1;
     [SerializeField] private UnityEvent onScore;
     private void OnTriggerEnter2D(Collider2D other)
     {
