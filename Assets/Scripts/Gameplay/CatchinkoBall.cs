@@ -178,6 +178,7 @@ public class CatchinkoBall : MonoBehaviour
     private void Update()
     {
         if (_stopped) return;
+        if (GameResultsManager.IsGameOver) Destroy(gameObject);
         UpdateDropperSound();
         UpdateGoalIntensitySound();
         UpdatePowerUpIntensitySound();
