@@ -105,7 +105,7 @@ public class CatchinkoBall : MonoBehaviour
     private List<GoalZone> _goals;
 
     Rigidbody2D rb;
-    public void Despawn() => StartCoroutine(DespawnRoutine());
+    public void Despawn(GoalType goal) => StartCoroutine(DespawnRoutine(goal));
 
     [SerializeField] private float hitSoundFactor = 25;
     private void OnCollisionEnter2D(Collision2D col)
@@ -130,21 +130,12 @@ public class CatchinkoBall : MonoBehaviour
         spawnSound.Play();
     }
 
-    private IEnumerator DespawnRoutine()
+    private IEnumerator DespawnRoutine(GoalType goal)
     {
-        var collider = Physics2D.OverlapCircleAll(transform.position, 1f);
-        foreach (var col in collider)
-        {
-            var goal = col.GetComponent<GoalZone>();
-            if (goal)
-            {
-                if (goal.scoreValue > 0) attackSound.Play();
-                else if (goal.scoreValue < 0) dieSound.Play();
-                else missSound.Play();
-
-                break;
-            }
-        }
+        if (goal == GoalType.Hit) attackSound.Play();
+        else if (goal == GoalType.Die) dieSound.Play();
+        else missSound.Play();
+       
         DeactivateIntensityControllers();
         yield return new WaitForSeconds(smokeDelay);
 

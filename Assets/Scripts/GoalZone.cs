@@ -1,18 +1,22 @@
+using Minimalist.Quantity;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class GoalZone : MonoBehaviour
 {
-    public int scoreValue = 1;
-    [SerializeField] private UnityEvent onScore;
+    [SerializeField] private UnityEvent<GoalType> onScore;
     private SoundIntensityController _soundIntensityController;
+    [SerializeField] private GoalType goal;
+
+    [SerializeField] private QuantityBhv enemyQuantity;
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Ball"))
         {
             // Destroy(other.gameObject);
             // GameResultsManager.GameOver(true);
-            onScore.Invoke();
+            onScore.Invoke(goal);
         }
     }
 

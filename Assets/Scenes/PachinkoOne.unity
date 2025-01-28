@@ -646,13 +646,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c09c7d53633fc4aac23a28fe548a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 1
   onScore:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1424300594}
         m_TargetAssemblyTypeName: BallDropper, Assembly-CSharp
         m_MethodName: ScoreSpawn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1188319704}
+        m_TargetAssemblyTypeName: Gameplay.CatCharacter, Assembly-CSharp
+        m_MethodName: Attack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -662,6 +673,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  goal: 2
+  enemyQuantity: {fileID: 1534380721}
 --- !u!61 &189006493
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -795,8 +808,8 @@ Transform:
   m_GameObject: {fileID: 189006491}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4657142, y: -3.3299997, z: 0}
-  m_LocalScale: {x: 1.0999999, y: 0.94285715, z: 1.4281768}
+  m_LocalPosition: {x: -1.4657142, y: -3.4599998, z: 0}
+  m_LocalScale: {x: 1.0999999, y: 0.53, z: 1.4281768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1306560780}
@@ -967,7 +980,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' 50/100'
+  m_text: 100/100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1444,7 +1457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 0}
-  _fillAmount: 0.5
+  _fillAmount: 1
 --- !u!114 &241755070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1457,7 +1470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Padding: {x: 0, y: 0, z: 147.5, w: 0}
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 0, y: 0}
 --- !u!114 &241755071
 MonoBehaviour:
@@ -1484,7 +1497,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -1970,14 +1983,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c09c7d53633fc4aac23a28fe548a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 1
   onScore:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1424300594}
         m_TargetAssemblyTypeName: BallDropper, Assembly-CSharp
         m_MethodName: ScoreSpawn
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1986,6 +1998,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  goal: 0
+  enemyQuantity: {fileID: 1534380721}
 --- !u!61 &341937348
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2100,7 +2114,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.77558064, g: 1, b: 0, a: 0.1764706}
+  m_Color: {r: 0, g: 0.12074661, b: 1, a: 0.1764706}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2119,8 +2133,8 @@ Transform:
   m_GameObject: {fileID: 341937346}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.18857138, y: -3.3299997, z: 0}
-  m_LocalScale: {x: 1.0999999, y: 0.94285715, z: 1.4281768}
+  m_LocalPosition: {x: -0.18857138, y: -3.4599998, z: 0}
+  m_LocalScale: {x: 1.0999999, y: 0.53, z: 1.4281768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1306560780}
@@ -2135,7 +2149,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 34a49c7038fecfe4fae6a3ed63bc7bc4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: af4a6cabfdd4a1442b682be7f2de7401, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2928,7 +2942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 241755069}
-  _fillAmount: 0.5
+  _fillAmount: 1
 --- !u!114 &454155277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2954,7 +2968,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -3055,6 +3069,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 461494720}
   m_CullTransparentMesh: 1
+--- !u!1 &472259782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5641588935596436489, guid: 6d2bde47bc75dbc45b1d4206c0c8b278, type: 3}
+  m_PrefabInstance: {fileID: 717390653}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &494548310
 GameObject:
   m_ObjectHideFlags: 0
@@ -3479,13 +3498,92 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5348022996435278908, guid: a5334d336dfbf444ca59d1ac588b1211, type: 3}
       insertIndex: -1
       addedObject: {fileID: 963798161}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3915351879102406117, guid: a5334d336dfbf444ca59d1ac588b1211, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 565442263}
   m_SourcePrefab: {fileID: 100100000, guid: a5334d336dfbf444ca59d1ac588b1211, type: 3}
 --- !u!4 &565442261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5348022996435278908, guid: a5334d336dfbf444ca59d1ac588b1211, type: 3}
   m_PrefabInstance: {fileID: 565442260}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &565442262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3915351879102406117, guid: a5334d336dfbf444ca59d1ac588b1211, type: 3}
+  m_PrefabInstance: {fileID: 565442260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &565442263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 565442262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3961e20c2aabd42bf72e1a08468e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _units: 
+  _maximumAmount: 100
+  _minimumAmount: 0
+  _capacity: 0
+  _currentAmount: 100
+  _deltaAmount: 0
+  _fillAmount: 1
+  _passiveDynamics:
+    _type: 1
+    _deltaAmountType: 0
+    _deltaPercentage: 1
+    _deltaAmount: 0
+    _deltaTime: 0.5
+    _enabled: 1
+  _onNameChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8719479006152707036}
+        m_TargetAssemblyTypeName: Minimalist.Quantity.QuantitySubscriber, Assembly-CSharp-firstpass
+        m_MethodName: UpdateName
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  _onAmountChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8719479006152707036}
+        m_TargetAssemblyTypeName: Minimalist.Bar.BarBhv, Assembly-CSharp-firstpass
+        m_MethodName: UpdateBar
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  _onInvalidRequest:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8719479006152707036}
+        m_TargetAssemblyTypeName: Minimalist.Bar.BarBhv, Assembly-CSharp-firstpass
+        m_MethodName: FlashBar
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!1 &593367810
 GameObject:
   m_ObjectHideFlags: 0
@@ -4249,13 +4347,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5641588935596436489, guid: 6d2bde47bc75dbc45b1d4206c0c8b278, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 717390656}
   m_SourcePrefab: {fileID: 100100000, guid: 6d2bde47bc75dbc45b1d4206c0c8b278, type: 3}
 --- !u!4 &717390654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8725417562036189581, guid: 6d2bde47bc75dbc45b1d4206c0c8b278, type: 3}
   m_PrefabInstance: {fileID: 717390653}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &717390656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 472259782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f3cd146fcc45e69b092f30921079fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 10
+  health: 100
+  maxHealth: 100
+  healthBar: {fileID: 1534380721}
+  enemy: {fileID: 1188319704}
 --- !u!1 &814535935
 GameObject:
   m_ObjectHideFlags: 0
@@ -4432,6 +4550,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840768479}
   m_CullTransparentMesh: 1
+--- !u!1 &847477474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847477475}
+  - component: {fileID: 847477476}
+  m_Layer: 0
+  m_Name: CombatController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &847477475
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847477474}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.7703198, y: 1.18572, z: -0.0122927185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &847477476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847477474}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5b851d137be2264aa12cb6612b53ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAttackSpeedRange: {x: 8, y: 15}
+  enemyCharacter: {fileID: 717390656}
 --- !u!1 &854152275
 GameObject:
   m_ObjectHideFlags: 0
@@ -4678,7 +4842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' 50/100'
+  m_text: 100/100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5072,7 +5236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 0}
-  _fillAmount: 0.5
+  _fillAmount: 1
 --- !u!114 &957933617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5085,7 +5249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Padding: {x: 0, y: 0, z: 147.5, w: 0}
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 0, y: 0}
 --- !u!114 &957933618
 MonoBehaviour:
@@ -5112,7 +5276,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -5180,7 +5344,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5641588935596436489, guid: 6d2bde47bc75dbc45b1d4206c0c8b278, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1188319704}
   m_SourcePrefab: {fileID: 100100000, guid: 6d2bde47bc75dbc45b1d4206c0c8b278, type: 3}
 --- !u!4 &963798161 stripped
 Transform:
@@ -6367,6 +6534,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1162343249}
   m_CullTransparentMesh: 1
+--- !u!1 &1188319702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5641588935596436489, guid: 6d2bde47bc75dbc45b1d4206c0c8b278, type: 3}
+  m_PrefabInstance: {fileID: 963798160}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1188319704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188319702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15f3cd146fcc45e69b092f30921079fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackDamage: 15
+  health: 100
+  maxHealth: 100
+  healthBar: {fileID: 565442263}
+  enemy: {fileID: 717390656}
 --- !u!1 &1192605412
 GameObject:
   m_ObjectHideFlags: 0
@@ -6612,14 +6801,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c09c7d53633fc4aac23a28fe548a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 1
   onScore:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1424300594}
         m_TargetAssemblyTypeName: BallDropper, Assembly-CSharp
         m_MethodName: ScoreSpawn
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6628,6 +6816,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  goal: 1
+  enemyQuantity: {fileID: 1534380721}
 --- !u!61 &1215722609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6742,7 +6932,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.77558064, g: 1, b: 0, a: 0.1764706}
+  m_Color: {r: 1, g: 0.28841394, b: 0, a: 0.1764706}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6761,8 +6951,8 @@ Transform:
   m_GameObject: {fileID: 1215722607}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.9199996, y: -3.3299997, z: 0}
-  m_LocalScale: {x: 1.0999999, y: 0.94285715, z: 1.4281768}
+  m_LocalPosition: {x: 4.9199996, y: -3.4599998, z: 0}
+  m_LocalScale: {x: 1.0999999, y: 0.53, z: 1.4281768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1306560780}
@@ -6777,7 +6967,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 34a49c7038fecfe4fae6a3ed63bc7bc4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f0338a2f492012144b7665a82bb42d5f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -7827,7 +8017,7 @@ GameObject:
   - component: {fileID: 1385186432}
   - component: {fileID: 1385186433}
   m_Layer: 0
-  m_Name: Bar
+  m_Name: EnemyPlatform Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7869,7 +8059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c7464033223d54ab22f7a2de34b0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _quantity: {fileID: 0}
+  _quantity: {fileID: 1534380721}
   _barColors:
     _mainFillBarGradient:
       _gradient:
@@ -7912,7 +8102,7 @@ MonoBehaviour:
     _backgroundLabelColor: {r: 0.8509804, g: 0.8509804, b: 0.8509804, a: 1}
     _foregroundLabelColor: {r: 0, g: 0, b: 0, a: 1}
   _displaySegments: 1
-  _segmentAmount: Infinity
+  _segmentAmount: 25
   _mainBorderWidth: 5
   _segmentBorderWidth: 1
   _glowProportion: 0.15
@@ -8096,8 +8286,8 @@ Transform:
   m_GameObject: {fileID: 1411317164}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7285714, y: -3.3299997, z: 0}
-  m_LocalScale: {x: 1.0999999, y: 0.94285715, z: 1.4281768}
+  m_LocalPosition: {x: -2.7285714, y: -3.46, z: 0}
+  m_LocalScale: {x: 1.0999999, y: 0.53, z: 1.4281768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1306560780}
@@ -8238,13 +8428,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c09c7d53633fc4aac23a28fe548a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 1
   onScore:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1424300594}
         m_TargetAssemblyTypeName: BallDropper, Assembly-CSharp
         m_MethodName: ScoreSpawn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1188319704}
+        m_TargetAssemblyTypeName: Gameplay.CatCharacter, Assembly-CSharp
+        m_MethodName: Attack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8254,6 +8455,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  goal: 2
+  enemyQuantity: {fileID: 1534380721}
 --- !u!82 &1411317170
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8565,7 +8768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 0}
-  _fillAmount: 0.5
+  _fillAmount: 1
 --- !u!114 &1436646234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8578,7 +8781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Padding: {x: 0, y: 0, z: 147.5, w: 0}
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 0, y: 0}
 --- !u!114 &1436646235
 MonoBehaviour:
@@ -8605,7 +8808,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -9122,14 +9325,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c09c7d53633fc4aac23a28fe548a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 1
   onScore:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1424300594}
         m_TargetAssemblyTypeName: BallDropper, Assembly-CSharp
         m_MethodName: ScoreSpawn
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -9138,6 +9340,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  goal: 0
+  enemyQuantity: {fileID: 1534380721}
 --- !u!61 &1529024878
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9252,7 +9456,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.77558064, g: 1, b: 0, a: 0.1764706}
+  m_Color: {r: 0, g: 0.12074661, b: 1, a: 0.1764706}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9271,8 +9475,8 @@ Transform:
   m_GameObject: {fileID: 1529024876}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.365714, y: -3.3299997, z: 0}
-  m_LocalScale: {x: 1.0999999, y: 0.94285715, z: 1.4281768}
+  m_LocalPosition: {x: 2.365714, y: -3.4599998, z: 0}
+  m_LocalScale: {x: 1.0999999, y: 0.53, z: 1.4281768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1306560780}
@@ -9287,7 +9491,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 34a49c7038fecfe4fae6a3ed63bc7bc4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: af4a6cabfdd4a1442b682be7f2de7401, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -9451,13 +9655,92 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5348022996435278908, guid: a5334d336dfbf444ca59d1ac588b1211, type: 3}
       insertIndex: -1
       addedObject: {fileID: 717390654}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3915351879102406117, guid: a5334d336dfbf444ca59d1ac588b1211, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1534380721}
   m_SourcePrefab: {fileID: 100100000, guid: a5334d336dfbf444ca59d1ac588b1211, type: 3}
 --- !u!4 &1534380719 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5348022996435278908, guid: a5334d336dfbf444ca59d1ac588b1211, type: 3}
   m_PrefabInstance: {fileID: 1534380718}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1534380720 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3915351879102406117, guid: a5334d336dfbf444ca59d1ac588b1211, type: 3}
+  m_PrefabInstance: {fileID: 1534380718}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1534380721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534380720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3961e20c2aabd42bf72e1a08468e79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _units: 
+  _maximumAmount: 100
+  _minimumAmount: 0
+  _capacity: 0
+  _currentAmount: 100
+  _deltaAmount: 0
+  _fillAmount: 1
+  _passiveDynamics:
+    _type: 1
+    _deltaAmountType: 0
+    _deltaPercentage: 1
+    _deltaAmount: 0
+    _deltaTime: 0.5
+    _enabled: 1
+  _onNameChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1385186433}
+        m_TargetAssemblyTypeName: Minimalist.Quantity.QuantitySubscriber, Assembly-CSharp-firstpass
+        m_MethodName: UpdateName
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  _onAmountChanged:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1385186433}
+        m_TargetAssemblyTypeName: Minimalist.Bar.BarBhv, Assembly-CSharp-firstpass
+        m_MethodName: UpdateBar
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+  _onInvalidRequest:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1385186433}
+        m_TargetAssemblyTypeName: Minimalist.Bar.BarBhv, Assembly-CSharp-firstpass
+        m_MethodName: FlashBar
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!1 &1536674040
 GameObject:
   m_ObjectHideFlags: 0
@@ -10448,14 +10731,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c09c7d53633fc4aac23a28fe548a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 1
   onScore:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1424300594}
         m_TargetAssemblyTypeName: BallDropper, Assembly-CSharp
         m_MethodName: ScoreSpawn
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10464,6 +10746,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  goal: 1
+  enemyQuantity: {fileID: 1534380721}
 --- !u!61 &1644874332
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10578,7 +10862,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.77558064, g: 1, b: 0, a: 0.1764706}
+  m_Color: {r: 1, g: 0.28841394, b: 0, a: 0.1764706}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10597,8 +10881,8 @@ Transform:
   m_GameObject: {fileID: 1644874330}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 6.197143, y: -3.3299997, z: 0}
-  m_LocalScale: {x: 1.0999999, y: 0.94285715, z: 1.4281768}
+  m_LocalPosition: {x: 6.197143, y: -3.4599998, z: 0}
+  m_LocalScale: {x: 1.0999999, y: 0.53, z: 1.4281768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1306560780}
@@ -10613,7 +10897,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 34a49c7038fecfe4fae6a3ed63bc7bc4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f0338a2f492012144b7665a82bb42d5f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -11173,7 +11457,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' 50/100'
+  m_text: 100/100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11705,7 +11989,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 957933616}
-  _fillAmount: 0.5
+  _fillAmount: 1
   _barGradient:
     _gradient:
       serializedVersion: 2
@@ -11750,7 +12034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9999997, g: 0.99998635, b: 0.0000060796738, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.39215687, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11762,7 +12046,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -12354,7 +12638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 1436646233}
-  _fillAmount: 0.5
+  _fillAmount: 1
 --- !u!114 &1862508426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12380,7 +12664,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -12426,14 +12710,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c09c7d53633fc4aac23a28fe548a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 1
   onScore:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1424300594}
         m_TargetAssemblyTypeName: BallDropper, Assembly-CSharp
         m_MethodName: ScoreSpawn
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12442,6 +12725,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  goal: 0
+  enemyQuantity: {fileID: 1534380721}
 --- !u!61 &1867466826
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12556,7 +12841,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.77558064, g: 1, b: 0, a: 0.1764706}
+  m_Color: {r: 0, g: 0.12074661, b: 1, a: 0.1764706}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -12575,8 +12860,8 @@ Transform:
   m_GameObject: {fileID: 1867466824}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0885714, y: -3.3299997, z: 0}
-  m_LocalScale: {x: 1.0999999, y: 0.94285715, z: 1.4281768}
+  m_LocalPosition: {x: 1.0885714, y: -3.4599998, z: 0}
+  m_LocalScale: {x: 1.0999999, y: 0.53, z: 1.4281768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1306560780}
@@ -12591,7 +12876,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 34a49c7038fecfe4fae6a3ed63bc7bc4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: af4a6cabfdd4a1442b682be7f2de7401, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13023,7 +13308,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' 50/100'
+  m_text: 100/100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14013,13 +14298,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c09c7d53633fc4aac23a28fe548a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 1
   onScore:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1424300594}
         m_TargetAssemblyTypeName: BallDropper, Assembly-CSharp
         m_MethodName: ScoreSpawn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1188319704}
+        m_TargetAssemblyTypeName: Gameplay.CatCharacter, Assembly-CSharp
+        m_MethodName: Attack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14029,6 +14325,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  goal: 2
+  enemyQuantity: {fileID: 1534380721}
 --- !u!61 &1993158373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -14162,8 +14460,8 @@ Transform:
   m_GameObject: {fileID: 1993158371}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6428573, y: -3.3299997, z: 0}
-  m_LocalScale: {x: 1.0999999, y: 0.94285715, z: 1.4281768}
+  m_LocalPosition: {x: 3.6428573, y: -3.4599998, z: 0}
+  m_LocalScale: {x: 1.0999999, y: 0.53, z: 1.4281768}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1306560780}
@@ -15037,7 +15335,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' 50/100'
+  m_text: 100/100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15171,7 +15469,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -15208,7 +15506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Padding: {x: 0, y: 0, z: 147.5, w: 0}
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 0, y: 0}
 --- !u!222 &107379156900144929
 CanvasRenderer:
@@ -15231,7 +15529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 0}
-  _fillAmount: 0.5
+  _fillAmount: 1
 --- !u!1 &107379157083633238
 GameObject:
   m_ObjectHideFlags: 0
@@ -15302,7 +15600,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' 50/100'
+  m_text: 100/100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15419,7 +15717,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' 50/100'
+  m_text: 100/100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15571,7 +15869,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -15608,7 +15906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Padding: {x: 0, y: 0, z: 147.5, w: 0}
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 0, y: 0}
 --- !u!222 &107379157263014861
 CanvasRenderer:
@@ -15631,7 +15929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 0}
-  _fillAmount: 0.5
+  _fillAmount: 1
 --- !u!224 &107379157639698770
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15705,7 +16003,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -15723,7 +16021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 0}
-  _fillAmount: 0.5
+  _fillAmount: 1
 --- !u!114 &107379157639698775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15736,7 +16034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Padding: {x: 0, y: 0, z: 147.5, w: 0}
+  m_Padding: {x: 0, y: 0, z: 0, w: 0}
   m_Softness: {x: 0, y: 0}
 --- !u!1 &107379158062394554
 GameObject:
@@ -15796,7 +16094,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' 50/100'
+  m_text: 100/100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17734,7 +18032,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -17752,7 +18050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 107379157639698774}
-  _fillAmount: 0.5
+  _fillAmount: 1
 --- !u!224 &8719479004886461278
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21024,7 +21322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9999997, g: 0.99998635, b: 0.0000060796738, a: 1}
+  m_Color: {r: 0, g: 1, b: 0.39215687, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -21036,7 +21334,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -21054,7 +21352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 107379156900144931}
-  _fillAmount: 0.5
+  _fillAmount: 1
   _barGradient:
     _gradient:
       serializedVersion: 2
@@ -23592,7 +23890,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.5
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -23610,7 +23908,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _fillProxy: {fileID: 107379157263014863}
-  _fillAmount: 0.5
+  _fillAmount: 1
 --- !u!224 &8719479006078860707
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24125,7 +24423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c7464033223d54ab22f7a2de34b0aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _quantity: {fileID: 0}
+  _quantity: {fileID: 565442263}
   _barColors:
     _mainFillBarGradient:
       _gradient:
@@ -24168,7 +24466,7 @@ MonoBehaviour:
     _backgroundLabelColor: {r: 0.8509804, g: 0.8509804, b: 0.8509804, a: 1}
     _foregroundLabelColor: {r: 0, g: 0, b: 0, a: 1}
   _displaySegments: 1
-  _segmentAmount: Infinity
+  _segmentAmount: 25
   _mainBorderWidth: 5
   _segmentBorderWidth: 1
   _glowProportion: 0.15
@@ -24199,7 +24497,7 @@ GameObject:
   - component: {fileID: 8719479006152707035}
   - component: {fileID: 8719479006152707036}
   m_Layer: 0
-  m_Name: Bar
+  m_Name: PlayerPlatform Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27375,3 +27673,4 @@ SceneRoots:
   - {fileID: 437072474}
   - {fileID: 1424300595}
   - {fileID: 1581236701}
+  - {fileID: 847477475}

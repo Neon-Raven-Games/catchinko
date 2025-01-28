@@ -1,6 +1,13 @@
 using System.Collections;
 using UnityEngine;
 
+public enum GoalType
+{
+    Miss,
+    Die,
+    Hit
+}
+
 public class BallDropper : MonoBehaviour
 {
     [SerializeField] private GameObject catBallPrefab;
@@ -69,16 +76,16 @@ public class BallDropper : MonoBehaviour
         _movementTime = 0f;
     }
 
-    public void ScoreSpawn()
+    public void ScoreSpawn(GoalType goal)
     {
-        StartCoroutine(DelayBallSpawn());
+        StartCoroutine(DelayBallSpawn(goal));
     }
 
-    private IEnumerator DelayBallSpawn()
+    private IEnumerator DelayBallSpawn(GoalType goal)
     {
         if (spawning) yield break;
         spawning = true;
-        if (_catBall != null) PlayDespawnEffectAndDestroy();
+        if (_catBall != null) PlayDespawnEffectAndDestroy(goal);
         yield return new WaitForSeconds(ballSpawnDelay);
         
         SpawnBall();
@@ -86,9 +93,9 @@ public class BallDropper : MonoBehaviour
     }
 
     private bool spawning;
-    private void PlayDespawnEffectAndDestroy()
+    private void PlayDespawnEffectAndDestroy(GoalType goal)
     {
-        _catBall.Despawn();
+        _catBall.Despawn(goal);
     }
 
     private void OnDrawGizmos()
