@@ -12,7 +12,7 @@ public class BallDropper : MonoBehaviour
     [SerializeField] private float movementSpeed = 2f;
 
     [SerializeField]
-    private AnimationCurve easingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1); // Easing curve for movement
+    private AnimationCurve easingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
     private CatchinkoBall _catBall;
     private Rigidbody2D _currentCatBallRb2d;
@@ -21,11 +21,10 @@ public class BallDropper : MonoBehaviour
     private Vector2 _leftEndpoint;
     private Vector2 _rightEndpoint;
 
-    private float _movementTime = 0f; // Keeps track of the ball's movement along the curve
+    private float _movementTime = 0f;
 
     private void Start()
     {
-        // Calculate path endpoints
         _leftEndpoint = new Vector2(ballSpawnPoint.position.x - pathWidth / 2f, ballSpawnPoint.position.y);
         _rightEndpoint = new Vector2(ballSpawnPoint.position.x + pathWidth / 2f, ballSpawnPoint.position.y);
 
@@ -77,12 +76,16 @@ public class BallDropper : MonoBehaviour
 
     private IEnumerator DelayBallSpawn()
     {
+        if (spawning) yield break;
+        spawning = true;
         if (_catBall != null) PlayDespawnEffectAndDestroy();
         yield return new WaitForSeconds(ballSpawnDelay);
         
         SpawnBall();
+        spawning = false;
     }
 
+    private bool spawning;
     private void PlayDespawnEffectAndDestroy()
     {
         _catBall.Despawn();

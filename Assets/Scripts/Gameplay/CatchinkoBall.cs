@@ -2,44 +2,22 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using UnityEngine;
-
-public class RuntimeSoundIntensity
-{
-    public float volume;
-    public float pitch;
-    public float distance;
-    public float time;
-}
 
 [Serializable]
 public class SoundIntensityController
 {
     private readonly AudioSource _audioSource;
-    private readonly CatchinkoBall _catchinkoBall;
+    private readonly MonoBehaviour _catchinkoBall;
 
-    // Animation Curves for dynamic control
-    [SerializeField] private AnimationCurve volumeOverTime = AnimationCurve.Linear(0, 0, 1, 1);
-    [SerializeField] private AnimationCurve pitchOverTime = AnimationCurve.EaseInOut(0, 2, 1, 1);
-    [SerializeField] private AnimationCurve volumeOverDistance = AnimationCurve.Linear(0, 1, 1, 0);
+    [SerializeField] private AnimationCurve volumeOverDistance = AnimationCurve.Linear(0.1f, 0, 1, 1);
     [SerializeField] private AnimationCurve pitchOverDistance = AnimationCurve.Linear(0, 1.5f, 1, 1);
 
-    private RuntimeSoundIntensity _currentIntensity;
-
-    // Constructor
-    public SoundIntensityController(AudioSource audioSource, CatchinkoBall ball)
+    public SoundIntensityController(AudioSource audioSource, MonoBehaviour zone)
     {
         _audioSource = audioSource;
-        _catchinkoBall = ball;
-
-        // Default runtime intensity
-        _currentIntensity = new RuntimeSoundIntensity
-        {
-            volume = 0,
-            pitch = 1,
-            distance = 0,
-            time = 0
-        };
+        _catchinkoBall = zone;
     }
 
     public void Stop()
@@ -49,21 +27,17 @@ public class SoundIntensityController
 
     private IEnumerator FadeOutRoutine()
     {
-        float fadeDuration = 0.5f; // Duration of the fade-out
-        float startVolume = _audioSource.volume; // Record the starting volume
+        float fadeDuration = 0.5f;
+        float startVolume = _audioSource.volume;
 
         for (float t = 0; t < fadeDuration; t += Time.deltaTime)
         {
-            // Lerp the volume down over time
             _audioSource.volume = Mathf.Lerp(startVolume, 0, t / fadeDuration);
             yield return null;
         }
 
-        // Ensure the volume reaches 0 and stop the audio
         _audioSource.volume = 0;
         _audioSource.Stop();
-
-        // Reset pitch for future use
         _audioSource.pitch = 1;
     }
 
@@ -74,7 +48,7 @@ public class SoundIntensityController
 
     private IEnumerator FadeOut()
     {
-        float fadeDuration = 0.2f; // Quick fade-out duration
+        float fadeDuration = 0.2f;
         float startVolume = _audioSource.volume;
 
         for (float t = 0; t < fadeDuration; t += Time.deltaTime)
@@ -84,23 +58,17 @@ public class SoundIntensityController
         }
 
         _audioSource.volume = 0;
-        Stop();
+        _audioSource.Stop();
     }
 
-    public void SetIntensity(float distance, float time)
+    public void SetIntensity(float distance)
     {
         if (!_audioSource.isPlaying) _audioSource.Play();
 
-        var normalizedTime = Mathf.Clamp01(time);
-        var normalizedDistance = Mathf.Clamp01(distance);
-
-        var timeVolume = volumeOverTime.Evaluate(normalizedTime);
-        var distanceVolume = volumeOverDistance.Evaluate(normalizedDistance);
-        _audioSource.volume = Mathf.Clamp01(timeVolume * distanceVolume);
-
-        var timePitch = pitchOverTime.Evaluate(normalizedTime);
-        var distancePitch = pitchOverDistance.Evaluate(normalizedDistance);
-        _audioSource.pitch = Mathf.Max(0.1f, timePitch * distancePitch);
+        var distanceVolume = volumeOverDistance.Evaluate(distance);
+        _audioSource.volume = Mathf.Clamp01(distanceVolume);
+        var distancePitch = pitchOverDistance.Evaluate(distance);
+        _audioSource.pitch = Mathf.Max(0.1f, distancePitch);
     }
 }
 
@@ -115,55 +83,109 @@ public class CatchinkoBall : MonoBehaviour
 
     [SerializeField] private AudioSource dropperSound;
 
-    [Header("Sound Intensity")]
-    [SerializeField] private List<GoalZone> goals;
+    [SerializeField] private AudioSource hitSound;
+    [SerializeField] private AudioSource explosionSound;
+    [SerializeField] private AudioSource spawnSound;
+    [SerializeField] private AudioSource attackSound;
+    [SerializeField] private AudioSource dieSound;
+    [SerializeField] private AudioSource missSound;
 
-    [SerializeField] private AudioSource positiveGoalIntensitySound;
-    [SerializeField] private AudioSource negativeGoalIntensitySound;
-    [SerializeField] private AudioSource missGoalIntensitySound;
+    [Header("Sound Intensity")] 
 
+    // todo, powerups should have their own for oscillation
     [SerializeField] private List<GameObject> powerUps;
     [SerializeField] private AudioSource positivePowerUpIntensitySound;
     [SerializeField] private AudioSource negativePowerUpIntensitySound;
-
-    private SoundIntensityController _positiveGoalIntensityController;
-    private SoundIntensityController _negativeGoalIntensityController;
-    private SoundIntensityController _missGoalIntensityController;
-
     private SoundIntensityController _positivePowerUpIntensityController;
     private SoundIntensityController _negativePowerUpIntensityController;
 
+    [SerializeField] private float explosionSoundDelay = 0.15f;
+    
+    private bool _stopped;
+    private List<GoalZone> _goals;
+
+    Rigidbody2D rb;
     public void Despawn() => StartCoroutine(DespawnRoutine());
+
+    [SerializeField] private float hitSoundFactor = 25;
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        hitSound.volume = Mathf.Clamp01(col.relativeVelocity.magnitude / hitSoundFactor);
+        hitSound.Play();
+    }
+    
+    [SerializeField] private GameObject spawnEffect;
 
     private void OnEnable()
     {
         // todo, extract this to a controller so we don't need to do this every time
-        goals = FindObjectsOfType<GoalZone>().ToList();
+        transform.localScale = Vector3.zero;
+        spawnEffect.SetActive(true);
+        
+        transform.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutBack).OnComplete(() => 
+            spawnEffect.transform.DOScale(Vector3.zero, 0.3f).SetEase(Ease.InBack)
+                .OnComplete(() => spawnEffect.gameObject.SetActive(false)));
+        
+        _goals = FindObjectsOfType<GoalZone>().ToList();
+        spawnSound.Play();
     }
 
     private IEnumerator DespawnRoutine()
     {
+        var collider = Physics2D.OverlapCircleAll(transform.position, 1f);
+        foreach (var col in collider)
+        {
+            var goal = col.GetComponent<GoalZone>();
+            if (goal)
+            {
+                if (goal.scoreValue > 0) attackSound.Play();
+                else if (goal.scoreValue < 0) dieSound.Play();
+                else missSound.Play();
+
+                break;
+            }
+        }
+        DeactivateIntensityControllers();
         yield return new WaitForSeconds(smokeDelay);
+
+        smoke.transform.localScale = Vector3.zero;
         smoke.SetActive(true);
+        smoke.transform.DOScale(0.06f, explosionDelay).SetEase(Ease.OutBack);
         yield return new WaitForSeconds(explosionDelay);
         explosion.SetActive(true);
+        smoke.transform.DOScale(Vector3.zero, despawnDelay).SetEase(Ease.InBack);
+        yield return new WaitForSeconds(explosionSoundDelay);
+        explosionSound.Play();
+        transform.DOScale(Vector3.zero, despawnDelay).SetEase(Ease.InBack);
         yield return new WaitForSeconds(despawnDelay);
         Destroy(gameObject);
     }
 
+
+    private void DeactivateIntensityControllers()
+    {
+        _stopped = true;
+        dropperSound.Stop();
+        StopGoalIntensities();
+    }
+
     private void Start()
     {
-        // Initialize sound intensity controllers
-        _positiveGoalIntensityController = new SoundIntensityController(positiveGoalIntensitySound, this);
-        _negativeGoalIntensityController = new SoundIntensityController(negativeGoalIntensitySound, this);
-        _missGoalIntensityController = new SoundIntensityController(missGoalIntensitySound, this);
-
+        rb = GetComponent<Rigidbody2D>();
         _positivePowerUpIntensityController = new SoundIntensityController(positivePowerUpIntensitySound, this);
         _negativePowerUpIntensityController = new SoundIntensityController(negativePowerUpIntensitySound, this);
     }
 
+    private void StopGoalIntensities()
+    {
+        foreach (var goal in _goals)
+        {
+            goal.Stop();
+        }
+    }
     private void Update()
     {
+        if (_stopped) return;
         UpdateDropperSound();
         UpdateGoalIntensitySound();
         UpdatePowerUpIntensitySound();
@@ -173,42 +195,18 @@ public class CatchinkoBall : MonoBehaviour
 
     private void UpdateGoalIntensitySound()
     {
-        foreach (var goal in goals)
+        foreach (var goal in _goals)
         {
             var distance = Vector2.Distance(goal.transform.position, transform.position);
 
             if (distance <= maxGoalSoundRange)
             {
-                var normalizedDistance = Mathf.Clamp01(distance / maxGoalSoundRange);
-
-                if (goal.scoreValue > 0)
-                {
-                    _positiveGoalIntensityController.SetIntensity(normalizedDistance, Time.timeSinceLevelLoad);
-                }
-                else if (goal.scoreValue < 0)
-                {
-                    _negativeGoalIntensityController.SetIntensity(normalizedDistance, Time.timeSinceLevelLoad);
-                }
-                else
-                {
-                    _missGoalIntensityController.SetIntensity(normalizedDistance, Time.timeSinceLevelLoad);
-                }
+                var normalizedDistance = 1 - Mathf.Clamp01(distance / maxGoalSoundRange);
+                goal.SetIntensity(normalizedDistance);
             }
             else
             {
-                // Fade out sounds for goals that are out of range
-                if (goal.scoreValue > 0)
-                {
-                    _positiveGoalIntensityController.Stop();
-                }
-                else if (goal.scoreValue < 0)
-                {
-                    _negativeGoalIntensityController.Stop();
-                }
-                else
-                {
-                    _missGoalIntensityController.Stop();
-                }
+                goal.Stop();
             }
         }
     }
@@ -216,31 +214,35 @@ public class CatchinkoBall : MonoBehaviour
 
     private void UpdatePowerUpIntensitySound()
     {
-        var closestPowerUp = powerUps.OrderBy(powerUp => Vector2.Distance(powerUp.transform.position, transform.position)).FirstOrDefault();
+        var closestPowerUp = powerUps
+            .OrderBy(powerUp => Vector2.Distance(powerUp.transform.position, transform.position)).FirstOrDefault();
         if (closestPowerUp == null) return;
 
         float distance = Vector2.Distance(transform.position, closestPowerUp.transform.position);
 
         if (closestPowerUp.CompareTag("PositivePowerUp"))
         {
-            _positivePowerUpIntensityController.SetIntensity(distance, Time.timeSinceLevelLoad);
+            _positivePowerUpIntensityController.SetIntensity(distance);
             _negativePowerUpIntensityController.Stop();
         }
         else if (closestPowerUp.CompareTag("NegativePowerUp"))
         {
-            _negativePowerUpIntensityController.SetIntensity(distance, Time.timeSinceLevelLoad);
+            _negativePowerUpIntensityController.SetIntensity(distance);
             _positivePowerUpIntensityController.Stop();
         }
     }
 
+
+    [SerializeField] private float dropperSoundVelocityFactor = 10f;
+    [SerializeField] private float dropperSoundMaxVolume = 0.5f;
+
     private void UpdateDropperSound()
     {
-        // Adjust dropper sound pitch and volume based on ball velocity
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (rb == null || dropperSound == null) return;
 
-        float speed = rb.velocity.magnitude;
-        dropperSound.volume = Mathf.Clamp01(speed / 10f); // Adjust volume based on speed
-        dropperSound.pitch = Mathf.Clamp(speed / 10f, 0.8f, 1.2f); // Adjust pitch slightly based on speed
+        if (!dropperSound.isPlaying) dropperSound.Play();
+        float speed = -rb.velocity.y;
+        dropperSound.volume = Mathf.Clamp(Mathf.Clamp01(speed / dropperSoundVelocityFactor), 0, dropperSoundMaxVolume);
+        dropperSound.pitch = Mathf.Clamp(speed / dropperSoundVelocityFactor, 0.8f, 1.2f);
     }
 }

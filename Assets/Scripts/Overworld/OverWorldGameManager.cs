@@ -73,7 +73,8 @@ namespace Overworld
         private static void TravelToNeighbor(OverWorldInnerLevel neighbor)
         {
             var path = OverWorldPathfinder.FindPath(_currentLevel, neighbor);
-            if (path.Count > 0)
+            
+            if (path.Count > 1)
             {
                 _instance.player.HidePanel();
                 _instance.StopCoroutine("WalkPlayerToPath");
@@ -105,7 +106,7 @@ namespace Overworld
         /// </summary>
         private static void InvalidMoveFeedback()
         {
-            _instance.player.transform.DOShakePosition(0.25f);
+            _instance.player.transform.DOShakePosition(0.05f, 0.1f, 1);
             if (_instance.invalidMoveSound) _instance.invalidMoveSound.Play();
         }
 
