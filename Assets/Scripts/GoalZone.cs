@@ -1,27 +1,22 @@
-using Minimalist.Quantity;
 using UnityEngine;
-using UnityEngine.Events;
 
 public class GoalZone : MonoBehaviour
 {
-    [SerializeField] private UnityEvent<GoalType> onScore;
     private SoundIntensityController _soundIntensityController;
     [SerializeField] private GoalType goal;
+    private BallDropper _dropper;
 
-    [SerializeField] private QuantityBhv enemyQuantity;
-    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Ball"))
         {
-            // Destroy(other.gameObject);
-            // GameResultsManager.GameOver(true);
-            onScore.Invoke(goal);
+            _dropper.ScoreSpawn(goal);
         }
     }
 
     private void Start()
     {
+        _dropper = FindObjectOfType<BallDropper>();
         var audioSource = GetComponent<AudioSource>();
         _soundIntensityController = new SoundIntensityController(audioSource, this);
     }

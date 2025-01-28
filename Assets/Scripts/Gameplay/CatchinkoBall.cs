@@ -100,8 +100,8 @@ public class CatchinkoBall : MonoBehaviour
     private SoundIntensityController _negativePowerUpIntensityController;
 
     [SerializeField] private float explosionSoundDelay = 0.15f;
-    
-    private bool _stopped;
+
+    private bool _stopped = true;
     private List<GoalZone> _goals;
 
     Rigidbody2D rb;
@@ -128,6 +128,7 @@ public class CatchinkoBall : MonoBehaviour
         
         _goals = FindObjectsOfType<GoalZone>().ToList();
         spawnSound.Play();
+        _stopped = false;
     }
 
     private IEnumerator DespawnRoutine(GoalType goal)

@@ -1,4 +1,5 @@
 using System.Collections;
+using Gameplay;
 using UnityEngine;
 
 public enum GoalType
@@ -17,9 +18,8 @@ public class BallDropper : MonoBehaviour
 
     [SerializeField] private float pathWidth = 5f;
     [SerializeField] private float movementSpeed = 2f;
-
-    [SerializeField]
-    private AnimationCurve easingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
+    [SerializeField] private GoalShuffler goalShuffler;
+    [SerializeField] private AnimationCurve easingCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
     private CatchinkoBall _catBall;
     private Rigidbody2D _currentCatBallRb2d;
@@ -60,6 +60,7 @@ public class BallDropper : MonoBehaviour
     {
         if (_isDropping || _currentCatBallRb2d == null) return;
 
+        GameResultsManager.ReduceBallCount();
         _isDropping = true;
         _currentCatBallRb2d.constraints = RigidbodyConstraints2D.None;
         _currentCatBallRb2d.velocity = new Vector2(0, 0);
@@ -68,13 +69,18 @@ public class BallDropper : MonoBehaviour
 
     private void SpawnBall()
     {
-        _catBall = Instantiate(catBallPrefab, ballSpawnPoint.position, Quaternion.identity).GetComponent<CatchinkoBall>();
+        if (GameResultsManager.IsGameOver) return;
+
+        _catBall = Instantiate(catBallPrefab, ballSpawnPoint.position, Quaternion.identity)
+            .GetComponent<CatchinkoBall>();
         _currentCatBallRb2d = _catBall.GetComponent<Rigidbody2D>();
         _currentCatBallRb2d.constraints =
             RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         _isDropping = false;
         _movementTime = 0f;
     }
+
+    [SerializeField] private CatCharacter playerCharacter;
 
     public void ScoreSpawn(GoalType goal)
     {
@@ -85,14 +91,21 @@ public class BallDropper : MonoBehaviour
     {
         if (spawning) yield break;
         spawning = true;
+        if (goal == GoalType.Hit) playerCharacter.Attack();
+        else if (goal == GoalType.Die) GameResultsManager.ReduceBallCount();
+
         if (_catBall != null) PlayDespawnEffectAndDestroy(goal);
         yield return new WaitForSeconds(ballSpawnDelay);
-        
+
+        goalShuffler.SpawnGoalsWeighted();
+
+        yield return null;
         SpawnBall();
         spawning = false;
     }
 
     private bool spawning;
+
     private void PlayDespawnEffectAndDestroy(GoalType goal)
     {
         _catBall.Despawn(goal);

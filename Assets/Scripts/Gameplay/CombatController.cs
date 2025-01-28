@@ -37,5 +37,6 @@ public class CombatController : MonoBehaviour
     {
         _instance._playing = false;
         _instance.StopAllCoroutines();
+        GameResultsManager.GameOver(_instance.enemyCharacter.IsAlive);
     }
 }

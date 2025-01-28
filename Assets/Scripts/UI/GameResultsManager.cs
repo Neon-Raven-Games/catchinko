@@ -1,4 +1,5 @@
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,15 +11,19 @@ using UnityEngine.SceneManagement;
 
 public class GameResultsManager : MonoBehaviour
 {
+    public static int ballCount = 25;
     private static GameResultsManager _instance;
     [SerializeField] private GameObject winScreen;
     [SerializeField] private GameObject loseScreen;
     
     // todo, serialized for testing purposes
     [SerializeField] private float _lastAward;
+    [SerializeField] private TextMeshProUGUI ballCountText;
+    public static bool IsGameOver => _instance.winScreen.transform.localScale.x > 0 || _instance.loseScreen.transform.localScale.x > 0;
     
     public static void GameOver(bool won)
     {
+        if (!_instance) return;
         if (won)
         {
             _instance.winScreen.transform.DOScale(_instance._canvasScale, 0.5f).SetEase(Ease.OutBack);
@@ -30,7 +35,7 @@ public class GameResultsManager : MonoBehaviour
             _instance.ProcessPlayerLoss();
         }
     }
-
+    
     public void BackToLevelSelect()
     {
         _instance.winScreen.transform.DOScale(0, 0.5f).SetEase(Ease.InBack).OnComplete(() => SceneManager.LoadScene(0));
@@ -47,12 +52,21 @@ public class GameResultsManager : MonoBehaviour
 
     private void ProcessPlayerLoss()
     {
+        // remove balls
+        ballCount -= 5;
+        ballCountText.text = ballCount.ToString();
+        // can we remove this?
         _lastAward = -1f;
         Debug.Log($"Reward: {_lastAward}. Player Lost :( pass performance stats for mercy or something?");
     }
 
     private void ProcessPlayerAwards()
     {
+        // add balls? health?
+        ballCount += 20;
+        ballCountText.text = ballCount.ToString();
+        
+        // remove award?
         _lastAward = 1f;
         Debug.Log($"Reward: {_lastAward} Player won the game! pass performance stats to game over method");
     }
@@ -77,5 +91,12 @@ public class GameResultsManager : MonoBehaviour
         
         loseScreen.gameObject.SetActive(true);
         loseScreen.transform.localScale = Vector3.zero;
+        ballCountText.text = ballCount.ToString();
+    }
+
+    public static void ReduceBallCount()
+    {
+        ballCount -= 1;
+        _instance.ballCountText.text = ballCount.ToString();
     }
 }

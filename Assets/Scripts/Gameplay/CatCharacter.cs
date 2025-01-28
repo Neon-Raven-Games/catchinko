@@ -12,6 +12,7 @@ namespace Gameplay
         private Animator _animator;
         
         [SerializeField] private CatCharacter enemy;
+        public bool IsAlive => health > 0;
         
         private int _combo = 1;
         private static readonly int _SHurt = Animator.StringToHash("Hurt");
