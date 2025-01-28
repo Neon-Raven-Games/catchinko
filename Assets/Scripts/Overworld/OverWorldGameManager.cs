@@ -146,6 +146,7 @@ namespace Overworld
         {
             if (curScene.buildIndex == 0)
             {
+                if (GameResultsManager.lastGameWon) _currentLevel.Complete();
                 player.gameObject.SetActive(true);
                 uIObject.SetActive(true);
                 overWorldObject.SetActive(true);

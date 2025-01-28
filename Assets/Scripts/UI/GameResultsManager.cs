@@ -20,10 +20,12 @@ public class GameResultsManager : MonoBehaviour
     [SerializeField] private float _lastAward;
     [SerializeField] private TextMeshProUGUI ballCountText;
     public static bool IsGameOver => _instance.winScreen.transform.localScale.x > 0 || _instance.loseScreen.transform.localScale.x > 0;
+    public static bool lastGameWon;
     
     public static void GameOver(bool won)
     {
         if (!_instance) return;
+        lastGameWon = won;
         if (won)
         {
             _instance.winScreen.transform.DOScale(_instance._canvasScale, 0.5f).SetEase(Ease.OutBack);

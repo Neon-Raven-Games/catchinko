@@ -28,6 +28,6 @@ public class GoalZone : MonoBehaviour
 
     public void Stop()
     {
-        _soundIntensityController.Stop();
+        if (_soundIntensityController != null) _soundIntensityController.Stop();
     }
 }

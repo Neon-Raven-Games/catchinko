@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace Overworld
 {
@@ -6,6 +8,12 @@ namespace Overworld
     public class OverWorldInnerLevel : MonoBehaviour
     {
         public OverWorldInnerLevelData data;
+        private SpriteRenderer _spriteRenderer;
+
+        public void Start()
+        {
+            _spriteRenderer = GetComponent<SpriteRenderer>();
+        }
 
         public void Unlock()
         {
@@ -15,6 +23,7 @@ namespace Overworld
 
         private void SetVisualsUnlocked()
         {
+            _spriteRenderer.color = Color.blue;
         }
 
         public void Complete()
@@ -29,6 +38,7 @@ namespace Overworld
 
         private void SetVisualsCompleted()
         {
+            _spriteRenderer.color = Color.green;
         }
     }
 }
