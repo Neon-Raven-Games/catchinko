@@ -1,0 +1,2578 @@
+fileFormatVersion: 2
+guid: 48a0a41109660f6448add6b4cc76e6e6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Small Ad 2 SS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418068b6770760a499209eafa7ec501b
+      internalID: 377928716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b945835fe899a4c97385d413588a9e
+      internalID: 988805270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42d260c26dadbbe4492e3ca295b2038e
+      internalID: 1036897391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_3
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9cda6cb84074d34db2396dfe9ae7175
+      internalID: 2135680478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfa5ad18a225e24d8fb44660d199f58
+      internalID: -888748292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b14f0308705fe546a75c4e52016cfe8
+      internalID: 1858231249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865afd79b2483564996c42af747a2d61
+      internalID: 1638857921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_7
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f47685cccbde4c4c90958ea1704f62b
+      internalID: 646963632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e5a9052e4c5a24d828b6d0325dd28d
+      internalID: -1937356865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_9
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60bdbec90fe645143bc1a8506a7d3d86
+      internalID: 879099703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_10
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 549276d9248c7524fa91ea4710ae8e3a
+      internalID: 1199433641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_11
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e02d95390d34446b7ed8df4ef639ca
+      internalID: -977276223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_12
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e557ed93cdfa144892b67f05a5e453
+      internalID: -887290337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_13
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75d96b51a1e5e3438195dc588ba4eef
+      internalID: -1490885968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_14
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd1011b2cdcd94448f29cf3d8102d31
+      internalID: -1163131556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_15
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629af26d51aa33f439eb464376390921
+      internalID: 1837158875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_16
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b058757cafc5a9c4d87a1df86a93948b
+      internalID: 2112186346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_17
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdec47190a6f804a99aeccc7120360a
+      internalID: 1094781479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_18
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0da7a556ce3c942bfb0ad24a10168b
+      internalID: -691328090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_19
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 240
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afbd69857ba63043a4f373a1fd1d5fb
+      internalID: 480812938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8d49f0060a89f4daf278a4b27f65ff
+      internalID: 1828673661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_21
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 337c533a72204e548916d0cc821531c3
+      internalID: 1993928672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afaa8b9b27480754a9ea051c8503fffb
+      internalID: -328559670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_23
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53e69d7ff219f2f45adf418761254db6
+      internalID: 964615761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_24
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64179f3d868b7ee4485866f72e3db6d1
+      internalID: -20552000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_25
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0c8bb4a69bccc43acc8267ac53035a
+      internalID: 1763459559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_26
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c0cb1dec4f8b64283e4e891cd20620
+      internalID: 333489061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_27
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527d891ba5abac54bbf2fb47bdad4d0a
+      internalID: 1302495023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_28
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ae7c24208da0b49be81d0cd85edd11
+      internalID: -812994464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_29
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118fff3a65f0842409ca2cb3877b47f9
+      internalID: -83201045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_30
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 087c14407b9026a4980f349e78f20dcc
+      internalID: 1163139677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_31
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a80711afd30974abdcd45c908fea8a
+      internalID: 1721383668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_32
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c760437e57db0714ca44d63752d20185
+      internalID: 1155025808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_33
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1599d4d6fa13cab42951f8f52ed98132
+      internalID: -1783054374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_34
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff1953ae01957f94884314a72fd6fe1a
+      internalID: -1001964367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_35
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb112c67ee18d5a488aa8ccd38c9223c
+      internalID: -65766839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_36
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a742410e203ee7449906bb85134b0553
+      internalID: -2097809052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_37
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2179997319bc9348acba0ae10c3ff53
+      internalID: 1687708180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_38
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aadb4b8a5ff84646a7496dd9cc108fc
+      internalID: -257648871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_39
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 192
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01aaa5b4a6163214ea330199aa600cce
+      internalID: 1115191174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e63cc1a5a622947b713b65d58cd8a2
+      internalID: -127785277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_41
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3edb58f9dbfe1489376f385d281f96
+      internalID: 123184379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_42
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecdf70a7b28fe74699b148494d88056
+      internalID: -1694908468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_43
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c599df1cba39ecf4dba978e458280980
+      internalID: -1827689301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_44
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7ca217cf7ce5848b96c51d6481bbac
+      internalID: -225727791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_45
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad0adf47dc60df419995b9258e84ca1
+      internalID: 1358888878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_46
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f20767c6500524ebbb05db87642f1a
+      internalID: -1273637311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_47
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9fa3a10a245bfd46a92e105edbf99ea
+      internalID: -524498507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_48
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccad1d7db9ac47d4c8d962ce94abfcb7
+      internalID: 587149026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_49
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c488eac61138741b905fc6cfae8a76
+      internalID: 1957536581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_50
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfd17e8058af284eb670ddb1c5cad64
+      internalID: -352176376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_51
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4a3b53ce38287e4486185861482f594
+      internalID: -1304462359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_52
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 688e4ee061769e243a296526b9b639a9
+      internalID: -1041374588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_53
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65492a6b2ea997041869a238e837c9c0
+      internalID: -788184153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_54
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc1ef82ff70572e439b6fc54b9181729
+      internalID: 1030213810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_55
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191a2120afb1ad34b8e7d3bd2d0aecd5
+      internalID: 416835810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_56
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b320e51caf77343ac9d252e910bb1c
+      internalID: 1689484352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_57
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f1291cc1f36a44eb73c8e15ce0a5ef
+      internalID: -28976355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_58
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc7ea0639e40aa4fb99454f66a1db37
+      internalID: 2085436879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_59
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 144
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92244fd37900e0f4e8896af927fa65d1
+      internalID: 1258871542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b39e7d9767fb344818c9d0cdb9fb61
+      internalID: 293899263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_61
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d548b607ff4386b4cbda20f86b5faef1
+      internalID: -2000617540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_62
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2090a8d6633fed84980733a2b10a34e4
+      internalID: 1618214826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_63
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774ae074180336e4aa6a3b9b47621c16
+      internalID: -1010011780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_64
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31380edeca07f7743af153ca58f9e96f
+      internalID: 1058454153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_65
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b90fa5a8827232408a349118cd2b6f0
+      internalID: -855469197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_66
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0add6e314168d12468c8700d1dae52e9
+      internalID: -2147469973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_67
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6303cbdecaa2724c814d185813694c6
+      internalID: 1072135603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_68
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b719690eb71bfea48bfe29e1eadef004
+      internalID: -114755982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_69
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98c789ced633f8b4eb9924a385789014
+      internalID: -142338154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_70
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c33515afa9f9f498cc7c62f2925ee7
+      internalID: 1168556784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_71
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7fef343d380b4a4cb4eb121859be695
+      internalID: 1240870559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_72
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74ed2ec96394b804596f1e0ea6b42f11
+      internalID: -873488954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_73
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5206f3303bee0b49a5c89b0cde614bb
+      internalID: -874190549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_74
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768b747272019484aabe4ce54239e18c
+      internalID: 1913361578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_75
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ab8b13103f21c46b1f019756228535
+      internalID: -613494096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_76
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469b31fb0e14103469ff06577c65018d
+      internalID: -1380771443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_77
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ae2e10227918c42b72cb3d9d63987e
+      internalID: 1543491394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_78
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c894f138ccaeb4f4bb9764ae97807583
+      internalID: 1480764886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_79
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 96
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e45d806de7bfb43ad6fa39bb758518
+      internalID: 1643576509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374165a31a9d31e45a673e963b45733b
+      internalID: 760898860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_81
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb692837786f7b440b0102a6e24b5dab
+      internalID: -1318534234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_82
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b30d12dca8356346a54a9a843ca4e0f
+      internalID: 197366556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_83
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba55e4ac5f442dd45a500a9040d9a3ab
+      internalID: -521287217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_84
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61bd27479f31cc5448d3c118c0d7da10
+      internalID: 317951039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_85
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07c4236f6cf1ec44ae51297b15ee3b4
+      internalID: 1996953654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_86
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1f654e56585764ab2494b841108a93
+      internalID: -1328081628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_87
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc040b113c47f24d98d74b7ea4ae798
+      internalID: -792867902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_88
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4009ac09386f64342a92646294e3ae3e
+      internalID: 764195484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_89
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e83925a2e1889d41a6a3b31f3f11df8
+      internalID: 2051987174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_90
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d6f805909170b439cf855835ef7c89
+      internalID: -1195651995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_91
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67b32ecf574c3548b596b1905331417
+      internalID: 273836798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_92
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d59d053861c7346b9e1076739cbd98
+      internalID: -1065208419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_93
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f41b4afc3e976649af5d646e001c86e
+      internalID: -1908429964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_94
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2222876e902a34a802a51c1ed440ca
+      internalID: 1198327659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_95
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ee1d7d1daee854fad399b65a874f65
+      internalID: 2075597775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_96
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de5db0b42002ad74e871e636dc55c0fb
+      internalID: 1295512640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_97
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579b0071de19106489d42fe8b903c003
+      internalID: -1697239937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_98
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5ec68c2f8c07549924c7ca2d91f8f1
+      internalID: -2138773414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_99
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 48
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1454e93ad464ba2499fa204ec9c5e5a5
+      internalID: -82559911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42cc915650030a34caf0a05ad9d75b8f
+      internalID: 100744160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_101
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b104cede7306b1459d71e0a3596adda
+      internalID: 1012088967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_102
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdd04796b48cf4458e1a8d98f2b7be0
+      internalID: -622280121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_103
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89038addde1e93f489c696aae98386b2
+      internalID: 968134315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_104
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a786a7ca0dad34a9a6cd5ca9453425
+      internalID: 197395572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_105
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b341fd78a5fb944381bb026ee72277b
+      internalID: -1201349507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_106
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1355ee6fbf4df0d45959fc987d2cd5e3
+      internalID: 1018848584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_107
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 512b51d740d685543ba50008a4b91fa4
+      internalID: -12523408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_108
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e24f54e8f983d446af189f8b2ef6e75
+      internalID: 1819445606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_109
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72dd461aa602d474ca3152d588b540b0
+      internalID: 958387765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_110
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f326b320ee5f994ab5db52ef9bc7dc3
+      internalID: -32385371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Small Ad 2 SS_111
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 0
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99dfeb99e2b3ac74c8ecf47402770cb8
+      internalID: 1846410919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Small Ad 2 SS_0: 377928716
+      Small Ad 2 SS_1: 988805270
+      Small Ad 2 SS_10: 1199433641
+      Small Ad 2 SS_100: 100744160
+      Small Ad 2 SS_101: 1012088967
+      Small Ad 2 SS_102: -622280121
+      Small Ad 2 SS_103: 968134315
+      Small Ad 2 SS_104: 197395572
+      Small Ad 2 SS_105: -1201349507
+      Small Ad 2 SS_106: 1018848584
+      Small Ad 2 SS_107: -12523408
+      Small Ad 2 SS_108: 1819445606
+      Small Ad 2 SS_109: 958387765
+      Small Ad 2 SS_11: -977276223
+      Small Ad 2 SS_110: -32385371
+      Small Ad 2 SS_111: 1846410919
+      Small Ad 2 SS_12: -887290337
+      Small Ad 2 SS_13: -1490885968
+      Small Ad 2 SS_14: -1163131556
+      Small Ad 2 SS_15: 1837158875
+      Small Ad 2 SS_16: 2112186346
+      Small Ad 2 SS_17: 1094781479
+      Small Ad 2 SS_18: -691328090
+      Small Ad 2 SS_19: 480812938
+      Small Ad 2 SS_2: 1036897391
+      Small Ad 2 SS_20: 1828673661
+      Small Ad 2 SS_21: 1993928672
+      Small Ad 2 SS_22: -328559670
+      Small Ad 2 SS_23: 964615761
+      Small Ad 2 SS_24: -20552000
+      Small Ad 2 SS_25: 1763459559
+      Small Ad 2 SS_26: 333489061
+      Small Ad 2 SS_27: 1302495023
+      Small Ad 2 SS_28: -812994464
+      Small Ad 2 SS_29: -83201045
+      Small Ad 2 SS_3: 2135680478
+      Small Ad 2 SS_30: 1163139677
+      Small Ad 2 SS_31: 1721383668
+      Small Ad 2 SS_32: 1155025808
+      Small Ad 2 SS_33: -1783054374
+      Small Ad 2 SS_34: -1001964367
+      Small Ad 2 SS_35: -65766839
+      Small Ad 2 SS_36: -2097809052
+      Small Ad 2 SS_37: 1687708180
+      Small Ad 2 SS_38: -257648871
+      Small Ad 2 SS_39: 1115191174
+      Small Ad 2 SS_4: -888748292
+      Small Ad 2 SS_40: -127785277
+      Small Ad 2 SS_41: 123184379
+      Small Ad 2 SS_42: -1694908468
+      Small Ad 2 SS_43: -1827689301
+      Small Ad 2 SS_44: -225727791
+      Small Ad 2 SS_45: 1358888878
+      Small Ad 2 SS_46: -1273637311
+      Small Ad 2 SS_47: -524498507
+      Small Ad 2 SS_48: 587149026
+      Small Ad 2 SS_49: 1957536581
+      Small Ad 2 SS_5: 1858231249
+      Small Ad 2 SS_50: -352176376
+      Small Ad 2 SS_51: -1304462359
+      Small Ad 2 SS_52: -1041374588
+      Small Ad 2 SS_53: -788184153
+      Small Ad 2 SS_54: 1030213810
+      Small Ad 2 SS_55: 416835810
+      Small Ad 2 SS_56: 1689484352
+      Small Ad 2 SS_57: -28976355
+      Small Ad 2 SS_58: 2085436879
+      Small Ad 2 SS_59: 1258871542
+      Small Ad 2 SS_6: 1638857921
+      Small Ad 2 SS_60: 293899263
+      Small Ad 2 SS_61: -2000617540
+      Small Ad 2 SS_62: 1618214826
+      Small Ad 2 SS_63: -1010011780
+      Small Ad 2 SS_64: 1058454153
+      Small Ad 2 SS_65: -855469197
+      Small Ad 2 SS_66: -2147469973
+      Small Ad 2 SS_67: 1072135603
+      Small Ad 2 SS_68: -114755982
+      Small Ad 2 SS_69: -142338154
+      Small Ad 2 SS_7: 646963632
+      Small Ad 2 SS_70: 1168556784
+      Small Ad 2 SS_71: 1240870559
+      Small Ad 2 SS_72: -873488954
+      Small Ad 2 SS_73: -874190549
+      Small Ad 2 SS_74: 1913361578
+      Small Ad 2 SS_75: -613494096
+      Small Ad 2 SS_76: -1380771443
+      Small Ad 2 SS_77: 1543491394
+      Small Ad 2 SS_78: 1480764886
+      Small Ad 2 SS_79: 1643576509
+      Small Ad 2 SS_8: -1937356865
+      Small Ad 2 SS_80: 760898860
+      Small Ad 2 SS_81: -1318534234
+      Small Ad 2 SS_82: 197366556
+      Small Ad 2 SS_83: -521287217
+      Small Ad 2 SS_84: 317951039
+      Small Ad 2 SS_85: 1996953654
+      Small Ad 2 SS_86: -1328081628
+      Small Ad 2 SS_87: -792867902
+      Small Ad 2 SS_88: 764195484
+      Small Ad 2 SS_89: 2051987174
+      Small Ad 2 SS_9: 879099703
+      Small Ad 2 SS_90: -1195651995
+      Small Ad 2 SS_91: 273836798
+      Small Ad 2 SS_92: -1065208419
+      Small Ad 2 SS_93: -1908429964
+      Small Ad 2 SS_94: 1198327659
+      Small Ad 2 SS_95: 2075597775
+      Small Ad 2 SS_96: 1295512640
+      Small Ad 2 SS_97: -1697239937
+      Small Ad 2 SS_98: -2138773414
+      Small Ad 2 SS_99: -82559911
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
