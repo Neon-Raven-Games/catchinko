@@ -8,6 +8,8 @@ namespace Overworld
 {
     public class OverWorldGameManager : MonoBehaviour
     {
+        public static OverWorldInnerLevel CurrentLevel => _currentLevel;
+        
         // todo, this is public because the editor script needed it.
         [SerializeField] public List<OverWorldMapData> levels;
         [SerializeField] private AudioSource walkingAudioSource;
@@ -15,12 +17,14 @@ namespace Overworld
         
         [SerializeField] private GameObject uIObject;
         [SerializeField] private GameObject overWorldObject;
+        public OverWorldPlayer player;
+        
 
         private static readonly Dictionary<CatBoss, OverWorldMapData> _levelDictionary = new();
         private static CatBoss _currentBoss;
-        private static OverWorldGameManager _instance;
         private static OverWorldInnerLevel _currentLevel;
-        public static OverWorldInnerLevel CurrentLevel => _currentLevel;
+        private static OverWorldGameManager _instance;
+        private static bool _pathing = false;
 
         
         public static void ChangeOverWorldLevel(OverWorldInnerLevel level)
@@ -29,9 +33,6 @@ namespace Overworld
             else _instance.player.ShowPanel();
         }
 
-        public OverWorldPlayer player;
-
-        private static bool _pathing = false;
         private static IEnumerator WalkPlayerToPath(List<OverWorldInnerLevel> levels, OverWorldPlayer player)
         {
             // advance two frames to ensure all coroutines are stopped, stop coroutine is trash
@@ -48,7 +49,7 @@ namespace Overworld
             // todo, temp fix. We should not include the first in the collection
             levels.RemoveAt(0);
 
-            foreach (OverWorldInnerLevel level in levels)
+            foreach (var level in levels)
             {
                 var startPos = player.transform.position;
                 var endPos = level.transform.position;
@@ -90,8 +91,6 @@ namespace Overworld
         }
 
         #region move to feedback system
-
-        // todo, make a feedback system
 
         /// <summary>
         /// Valid Move Feedbacks
