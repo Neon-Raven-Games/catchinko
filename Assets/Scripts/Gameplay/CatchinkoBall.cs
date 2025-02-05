@@ -179,9 +179,9 @@ public class CatchinkoBall : MonoBehaviour
     {
         if (_stopped) return;
         if (GameResultsManager.IsGameOver) Destroy(gameObject);
-        UpdateDropperSound();
-        UpdateGoalIntensitySound();
-        UpdatePowerUpIntensitySound();
+        // UpdateDropperSound();
+        // UpdateGoalIntensitySound();
+        // UpdatePowerUpIntensitySound();
     }
 
     [SerializeField] private float maxGoalSoundRange = 5f;

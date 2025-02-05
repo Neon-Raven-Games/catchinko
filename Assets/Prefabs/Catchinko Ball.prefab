@@ -1719,7 +1719,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 0
 --- !u!58 &1285461497974825624
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1779,9 +1779,6 @@ MonoBehaviour:
   attackSound: {fileID: 3753140789809612756}
   dieSound: {fileID: 6263905490546867045}
   missSound: {fileID: 2803129165461773881}
-  positiveGoalIntensitySound: {fileID: 5016193353885933039}
-  negativeGoalIntensitySound: {fileID: 4547197925048578640}
-  missGoalIntensitySound: {fileID: 1104778225103709408}
   powerUps: []
   positivePowerUpIntensitySound: {fileID: 5767789361775546978}
   negativePowerUpIntensitySound: {fileID: 7388596329734588440}

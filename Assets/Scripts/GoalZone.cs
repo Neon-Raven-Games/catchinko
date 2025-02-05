@@ -4,19 +4,17 @@ public class GoalZone : MonoBehaviour
 {
     private SoundIntensityController _soundIntensityController;
     [SerializeField] private GoalType goal;
-    private BallDropper _dropper;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Ball"))
         {
-            _dropper.ScoreSpawn(goal);
+            other.gameObject.GetComponent<CatchinkoBall>().Despawn(goal);
         }
     }
 
     private void Start()
     {
-        _dropper = FindObjectOfType<BallDropper>();
         var audioSource = GetComponent<AudioSource>();
         _soundIntensityController = new SoundIntensityController(audioSource, this);
     }
