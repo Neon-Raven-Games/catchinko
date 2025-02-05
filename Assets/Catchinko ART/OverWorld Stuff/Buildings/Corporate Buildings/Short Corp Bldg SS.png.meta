@@ -1,0 +1,1016 @@
+fileFormatVersion: 2
+guid: b44e64135e06c554c9661825a06c25cb
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 556
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cc1d77b0e4054c4b9ef3d92a693e1fd
+      internalID: -997594119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 556
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c941944ca5535354cb5d7c00a05a7e90
+      internalID: -825251440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 556
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd14b8c758ee7d4f9a29cb6f9cbe7f1
+      internalID: 1533941574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 556
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a023ab47ad42964693ad93a06330664
+      internalID: -1523191662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 556
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13139b1f99732d42ad1a6141b437ec8
+      internalID: -1533185001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 556
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2044325b3cb765c4683b1a6c6de982da
+      internalID: -883177103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 556
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b71a5534549fc40ac73f05500ffb86
+      internalID: -1584440084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_7
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 556
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4d7abf287d4174385e0667c5c220ca
+      internalID: 1035963590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 556
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dba1afae2b1abe4b9efe5febed96a44
+      internalID: -1331576462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_9
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 556
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5556fb01fae72f04aa9e44d57e8feff8
+      internalID: 465580219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 417
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a644c212292b57a48873e15b44b9582f
+      internalID: -1451241188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_11
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 417
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffbbcc28b16c764e9489f15f2d21aeb
+      internalID: -844098560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_12
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 417
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8432bde83700354ea85c9d21e90ce1e
+      internalID: 1015150925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_13
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 417
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfecf0c5e59143844bfc1049439e57cc
+      internalID: 1575378290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_14
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 417
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51ec1ef0602ac334196b03c16f13216d
+      internalID: 195479940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_15
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 417
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e009528416b1654088b332829fdf38f
+      internalID: -1767523943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_16
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 417
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f16f3341643fd244db55d3bf70ee0be0
+      internalID: 2074153595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_17
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 417
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e09ddd78a9f154fa50df1608e8d5fe
+      internalID: 2033118937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_18
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 417
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff7f7535b1faeb0418ee020d461d12e1
+      internalID: 2118856401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_19
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 417
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3561ccb7c2a0a140baf85eebc3b2390
+      internalID: -1980328651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 278
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e827b67e0eb684eaa64be48f7de399
+      internalID: -386655907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 278
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205d9e5dc2e88d54f882dcf2d4105935
+      internalID: 2030220720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 278
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 621333b4ecf4cf54f81dac4e3b560fd3
+      internalID: -1581816496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_23
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 278
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e96a8f3ada82a264a89c8271ce732f07
+      internalID: 2025384717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_24
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 278
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69d6f7fc854ebc4e9029eb71a61dbf3
+      internalID: 1884226660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_25
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 278
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163b1a389134ebf4faea5d16c470e072
+      internalID: -1022515197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_26
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 278
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c63f360edc228419d97bde112cc80f
+      internalID: 1401938337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_27
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 278
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7db2b8620e01754e877ce1bc9584f30
+      internalID: -1112687740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_28
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 278
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0b9833ce0b57744ab713b95afee977
+      internalID: 115145253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_29
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 278
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7520440ed3d5f847ac3c96a34c8447e
+      internalID: 518939484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 139
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4e52548e4b55242a5d8cb964cb16de
+      internalID: 288734983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_31
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 139
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750931e7af65b39429c7de176e0a70ec
+      internalID: -216510491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_32
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 139
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa56665c52ecdfa499a89b20020d32bc
+      internalID: 368332282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_33
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 139
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d163e70cbbaba0c4cb573366ed4b690a
+      internalID: -2077180048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_34
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 139
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1790df67f51ad91498beb48b43f3d140
+      internalID: -523340189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_35
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 139
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c4fe4afa7f8ad4bb8ca05624fef7fd
+      internalID: -567656397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_36
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 139
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56cf9e64b18178d439cfbef3b3559fc1
+      internalID: -724906538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_37
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 139
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf41a34ef7cd9c44a0a44e199fc1a5d
+      internalID: -1269463028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_38
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 139
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b294448657707f4ab52a4e95a0e8761
+      internalID: 2068999009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_39
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 139
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c46c943cbc8ee44c90879b5087de5a3
+      internalID: 1526606145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Short Corp Bldg SS_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 130
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed78b8e9c12ddb244bb145ed9c4b3f34
+      internalID: 1057879335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Short Corp Bldg SS_0: -997594119
+      Short Corp Bldg SS_1: -825251440
+      Short Corp Bldg SS_10: -1451241188
+      Short Corp Bldg SS_11: -844098560
+      Short Corp Bldg SS_12: 1015150925
+      Short Corp Bldg SS_13: 1575378290
+      Short Corp Bldg SS_14: 195479940
+      Short Corp Bldg SS_15: -1767523943
+      Short Corp Bldg SS_16: 2074153595
+      Short Corp Bldg SS_17: 2033118937
+      Short Corp Bldg SS_18: 2118856401
+      Short Corp Bldg SS_19: -1980328651
+      Short Corp Bldg SS_2: 1533941574
+      Short Corp Bldg SS_20: -386655907
+      Short Corp Bldg SS_21: 2030220720
+      Short Corp Bldg SS_22: -1581816496
+      Short Corp Bldg SS_23: 2025384717
+      Short Corp Bldg SS_24: 1884226660
+      Short Corp Bldg SS_25: -1022515197
+      Short Corp Bldg SS_26: 1401938337
+      Short Corp Bldg SS_27: -1112687740
+      Short Corp Bldg SS_28: 115145253
+      Short Corp Bldg SS_29: 518939484
+      Short Corp Bldg SS_3: -1523191662
+      Short Corp Bldg SS_30: 288734983
+      Short Corp Bldg SS_31: -216510491
+      Short Corp Bldg SS_32: 368332282
+      Short Corp Bldg SS_33: -2077180048
+      Short Corp Bldg SS_34: -523340189
+      Short Corp Bldg SS_35: -567656397
+      Short Corp Bldg SS_36: -724906538
+      Short Corp Bldg SS_37: -1269463028
+      Short Corp Bldg SS_38: 2068999009
+      Short Corp Bldg SS_39: 1526606145
+      Short Corp Bldg SS_4: -1533185001
+      Short Corp Bldg SS_40: 1057879335
+      Short Corp Bldg SS_5: -883177103
+      Short Corp Bldg SS_6: -1584440084
+      Short Corp Bldg SS_7: 1035963590
+      Short Corp Bldg SS_8: -1331576462
+      Short Corp Bldg SS_9: 465580219
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

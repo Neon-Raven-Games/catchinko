@@ -1,0 +1,1016 @@
+fileFormatVersion: 2
+guid: c90d060d70f0c9f499021ec834dd794e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 856
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e12b2a1369e95488c9d5f9a392e6d0
+      internalID: 427415671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 856
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a1b200c4d5e60c4bb441d3be732f25e
+      internalID: -1955897343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 856
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed942c56b198cfd41bd7354a7906e26f
+      internalID: 237950847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 856
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ddc497315e719f49801e2b809e8eece
+      internalID: 1083947858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 856
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0039b05a5a9d384faeb601e61868fc4
+      internalID: -1575213426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 856
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf5a80ea4ddc96499087d340320eece
+      internalID: 1146318908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 856
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5f59d1ec82242d4fbb1b5708328df1c
+      internalID: 1744347873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_7
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 856
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5690518dce9d045479cde79bac766799
+      internalID: 415143724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 856
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e235412bc7be04da0b79fc61870bdd
+      internalID: 2096196022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_9
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 856
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08cb1f2536acab44adeb6c53866d5b4
+      internalID: 957546660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 642
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bbe2e031e69439449385bfc375b9a5b
+      internalID: -1018339823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_11
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 642
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda4239871d8e0f4182008bd9b7110ff
+      internalID: -1998816417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_12
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 642
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2466af2866eba4bb0ed76ec30e0f01
+      internalID: -528916716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_13
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 642
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bb2ed0fa6158d45ba4177b92d05aa8
+      internalID: -1581113013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_14
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 642
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd38ba3ae40a83c4e9028a140a644292
+      internalID: -1690245964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_15
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 642
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6285e1cbe16613942ba04ceeb5942947
+      internalID: -970908991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_16
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 642
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3994fa6742497394e9e6e79276a928ef
+      internalID: 230012274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_17
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 642
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc95d72e58147e4bbf9db72f2755f13
+      internalID: -888409523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_18
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 642
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02dc371121db724ba14d711022c0abb
+      internalID: -1033262659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_19
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 642
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841a1f6b3b1466d42bc9e10ef4915cff
+      internalID: 1944360518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 428
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7889c7469fa164abe6fdb0df9b7420
+      internalID: 670622743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 428
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f9e949131cb4f4eba01af9ff105e7d
+      internalID: 493157080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_22
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 428
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbca7d4209775bf42bb348ce57de0b15
+      internalID: 1468608516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_23
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 428
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a574ac82101e12c49af7dc4381ed314e
+      internalID: 310722782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_24
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 428
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa8c1f9e449f0b4b9155477c11ecc93
+      internalID: -2133308821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_25
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 428
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e94a43cfc8e51bc448991008b3c755c6
+      internalID: 272399349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_26
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 428
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939ad09ce2cbcb24198ae8badc7e9cc3
+      internalID: 2076400267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_27
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 428
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b91ba8733dec5549ab9eb90a6349eb9
+      internalID: -993754908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_28
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 428
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058654db4406a48449f4c6715c97d93c
+      internalID: -66191787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_29
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 428
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea671bf9f2179d744b45803e8a9d4526
+      internalID: 254974325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 214
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac522670f7bae34fb3275edbee34e52
+      internalID: -1672082950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_31
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 214
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 653cd515b76478745a860e472cc8f8d9
+      internalID: 1325287990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_32
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 214
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d5fcccc67ecb94eae4e507e62bec43
+      internalID: -1071493748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_33
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 214
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd456e42e4a28943b6f0ef9e34f8f70
+      internalID: -1098291903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_34
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 214
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7aa57c0eef474545bae33e3c9095653
+      internalID: -2045344091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_35
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 214
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba586aac001631d489dff2d0a5f07ae8
+      internalID: -1770237979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_36
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 214
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e104099b1600e44895d05acda1c3108
+      internalID: 1104378972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_37
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 214
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25bed22770126884787c9cb39c78eadd
+      internalID: 1721089087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_38
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 214
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf92eeb77717c1469c3b10ca4f7e49f
+      internalID: -1603352260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_39
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 214
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b58960fb018b2f7419adb9adbae9edfa
+      internalID: 1969846529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Long Corp Bldg SS_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 130
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07d1f26fb01b7f3498c8edd67c1ef46a
+      internalID: -180414663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Long Corp Bldg SS_0: 427415671
+      Long Corp Bldg SS_1: -1955897343
+      Long Corp Bldg SS_10: -1018339823
+      Long Corp Bldg SS_11: -1998816417
+      Long Corp Bldg SS_12: -528916716
+      Long Corp Bldg SS_13: -1581113013
+      Long Corp Bldg SS_14: -1690245964
+      Long Corp Bldg SS_15: -970908991
+      Long Corp Bldg SS_16: 230012274
+      Long Corp Bldg SS_17: -888409523
+      Long Corp Bldg SS_18: -1033262659
+      Long Corp Bldg SS_19: 1944360518
+      Long Corp Bldg SS_2: 237950847
+      Long Corp Bldg SS_20: 670622743
+      Long Corp Bldg SS_21: 493157080
+      Long Corp Bldg SS_22: 1468608516
+      Long Corp Bldg SS_23: 310722782
+      Long Corp Bldg SS_24: -2133308821
+      Long Corp Bldg SS_25: 272399349
+      Long Corp Bldg SS_26: 2076400267
+      Long Corp Bldg SS_27: -993754908
+      Long Corp Bldg SS_28: -66191787
+      Long Corp Bldg SS_29: 254974325
+      Long Corp Bldg SS_3: 1083947858
+      Long Corp Bldg SS_30: -1672082950
+      Long Corp Bldg SS_31: 1325287990
+      Long Corp Bldg SS_32: -1071493748
+      Long Corp Bldg SS_33: -1098291903
+      Long Corp Bldg SS_34: -2045344091
+      Long Corp Bldg SS_35: -1770237979
+      Long Corp Bldg SS_36: 1104378972
+      Long Corp Bldg SS_37: 1721089087
+      Long Corp Bldg SS_38: -1603352260
+      Long Corp Bldg SS_39: 1969846529
+      Long Corp Bldg SS_4: -1575213426
+      Long Corp Bldg SS_40: -180414663
+      Long Corp Bldg SS_5: 1146318908
+      Long Corp Bldg SS_6: 1744347873
+      Long Corp Bldg SS_7: 415143724
+      Long Corp Bldg SS_8: 2096196022
+      Long Corp Bldg SS_9: 957546660
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

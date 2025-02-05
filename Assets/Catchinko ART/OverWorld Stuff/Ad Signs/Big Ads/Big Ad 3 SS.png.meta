@@ -1,0 +1,2754 @@
+fileFormatVersion: 2
+guid: 9f76f0df40eb42b4087cacb8b3f93ef2
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Big Ad 3 SS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 484
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f3621fab55ee4a4495dc196740294cc
+      internalID: -1818668046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 484
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270c248ca2dbf9e408163ba74ff6536c
+      internalID: -524889196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 484
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e538a0ace9e104dbc1282ccea44a01
+      internalID: -1308620248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_3
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 484
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8cba421022c194bb1387d296ad011f
+      internalID: 1373346025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_4
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 484
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6cdbe159cb25d428648f77fb343b0f
+      internalID: -1767787765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_5
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 484
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8f0cce5670555448acbeb4b789b384
+      internalID: 1795551223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_6
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 484
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2455e371a01aa9347a0f44acd12c7ab6
+      internalID: -121421866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_7
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 484
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e8f8ac22090ea4a9006ea47cb00b75
+      internalID: -1234118410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_8
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 484
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff75934987d68dd49adbf0b13f9094b0
+      internalID: 587228061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_9
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 484
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079747b945aad8345b0f079212d5d580
+      internalID: -933399284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 440
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc53e9b1e600d1e419904d377093f923
+      internalID: -246648053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 440
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e14b1abce89e004f887b2218a26121b
+      internalID: 1325402243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_12
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 440
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bd266ef03690b46bc0f02e5156724d
+      internalID: -924882152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_13
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 440
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044d51a6bb0b79c4c9bc1eb66cdae693
+      internalID: -803334655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_14
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 440
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159a2dd9ea67f5b42947c8baae47e06b
+      internalID: -1663267413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_15
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 440
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0403a983a311c4e9c965385d0ff396
+      internalID: 376388309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_16
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 440
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51d6b5942156d734498dc9b017c8eda8
+      internalID: 1629193446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_17
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 440
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b51948c1c85ab64bba917833a5038eb
+      internalID: -2134398778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_18
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 440
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495801efd1540a84c82d3fb6bf3fbdb7
+      internalID: -831302066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_19
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 440
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5ee612a37db2a34ea4d91c8acfd7b28
+      internalID: -70797984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 396
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36224b195b4a9894ebd43d069c6c5fe5
+      internalID: -1330043027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_21
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 396
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c614191330c22fe49992401093ceaf1f
+      internalID: 1342232923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_22
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 396
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 159132ebdd12f514dbb960ef2441a26f
+      internalID: -1456811749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_23
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 396
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd93d851c315c8d499f934f134ee69c3
+      internalID: -825103995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_24
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 396
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7474c40ae2569674493888556dcd2a24
+      internalID: -1368050633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_25
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 396
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e945f23dc19204595a4fd2ad6942a4
+      internalID: -1627716338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_26
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 396
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f029e87c37cb0f44b90fa13e46b68858
+      internalID: 228755467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_27
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 396
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3f3ff368937a04c95a03d7f711ceb3
+      internalID: -235484201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_28
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 396
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd79e8c17feb9574d8424c42e891eee7
+      internalID: 390548836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_29
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 396
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30e3a412c0a1fc945814006151ff92bc
+      internalID: 942809271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4473b2c8b8d05242b696958c84cec81
+      internalID: -790808727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_31
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 352
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba5913c67eb7ae469a561482b624053
+      internalID: -138073742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_32
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 352
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c76ab6c0500aa54eb80427a31d7ef25
+      internalID: -1336258575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_33
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 352
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9c97c24a48fd646b1dbe1a4efc1092
+      internalID: 1218227480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_34
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 352
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbc84f9bf943dc340b0de2632d4e2fe2
+      internalID: -1457418162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_35
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 352
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96176bb99beb3e942bab0be28f99fa3e
+      internalID: -221803378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_36
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 352
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bbb60344f455a4cbd12cd13e2849bf
+      internalID: 1709363127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_37
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 352
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 190667cec3cd8c845a9f4b0ec5789239
+      internalID: 1419176948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_38
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 352
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a4ddd8d3590ad4a9423ae5d7d11928
+      internalID: -658912639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_39
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 352
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b751e508309829c4196961f227645fe2
+      internalID: -126918261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 308
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f98e7d2907dfb2499c45e7b8117421f
+      internalID: -886996991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_41
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 308
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcbfa9e28671a0d4aa550301652197dd
+      internalID: 383499863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_42
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 308
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d782251a7f3807f4db0ea3d9ae62c051
+      internalID: -900995195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_43
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 308
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d9d743f985e3142addfcbd480f0c74
+      internalID: 272480356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_44
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 308
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e0b7e1ceec6864d9a423d8ff0941bc
+      internalID: -17323192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_45
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 308
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d8121a7bd081149bdd907df037aaab
+      internalID: 66436277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_46
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 308
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315d41855768b534f8ca942197699f37
+      internalID: -823905176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_47
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 308
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc90365fa11e2154aaf6c50ab0b20cb0
+      internalID: -1567970606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_48
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 308
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b3660b48020d9b4ba3537a88d926f58
+      internalID: -989472603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_49
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 308
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac0e4a4332d9a34eaead847f2c96126
+      internalID: -169740043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792b86848e95eb14c8b7e8c14756c1e2
+      internalID: -166367973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_51
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 264
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc50bb5da6435c4daa9410105f650f1
+      internalID: 210190288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_52
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 264
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f9b816eaf294b24b919c0ab55f07ac4
+      internalID: -578148143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_53
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 264
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978c65ff9440dd04089e0d45633a6694
+      internalID: 1411853946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_54
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 264
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04940b0778cd54b4cb0f36602fa4bb65
+      internalID: -897909111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_55
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 264
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfaafeaa553144f46a5c672f8c67d71f
+      internalID: 424412111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_56
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 264
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a211a5c0842507d44b2a1bc21118b989
+      internalID: 1265566927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_57
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 264
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24eec5f255f996348b974daf428b8bb4
+      internalID: -112592869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_58
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 264
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7b761c7554aa14b9a82f3cb5463e02
+      internalID: 197966170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_59
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 264
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0480a3938ee3fbe4891861db2a209009
+      internalID: -753926542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cf9a6e15fee054bbaf37991fe6787e
+      internalID: -1017134392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_61
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 220
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5c0d34d51655a4f8d3707b46355d8c
+      internalID: 1953964695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_62
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 220
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e7ec9be06b14a49a004bfa8342ced8
+      internalID: 741280564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_63
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 220
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e5c6cc62f51064697664219bb8c6b7
+      internalID: -1263780669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_64
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 220
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9add04c589ebc43bcda33fd0fcd18f
+      internalID: -943972841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_65
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 220
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51a4b4c9a57e2946ae6e8008b2c529e
+      internalID: 782169020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_66
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 220
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b24820d297ff348903822785e7de94
+      internalID: 1550500471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_67
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 220
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df07147677e1f4d4d84fd68941e429ed
+      internalID: -62001525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_68
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 220
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82dc7fd72799b0448b2a0a6d1285b585
+      internalID: 704805667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_69
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 220
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e943771cb68a67468320ae031e480f0
+      internalID: -1137223247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62514363d055ac34ab37b74482054274
+      internalID: -1951865295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_71
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 176
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5892e20ed182f947aaab38565256981
+      internalID: -1779200535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_72
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 176
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce0fafb63e272941bf65f49c79d71f9
+      internalID: -1510356681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_73
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 176
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24ecbbcb4ea4654789fc1ef538296ec
+      internalID: 436166092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_74
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 176
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178dff689e3ccf44685f96f4494ce5a3
+      internalID: 627818446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_75
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 176
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f959aac9496765418db9100cd203bbc
+      internalID: -98288131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_76
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 176
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3b2c71af40b9042b4fdeed72bb4f39
+      internalID: -280142129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_77
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 176
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9218d5ae42f21d742bc6a0d7e9c05734
+      internalID: 1181236893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_78
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 176
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7524d8bd178772745bf7082542eb0f8e
+      internalID: 516266655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_79
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 176
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34310723fb7b6647acaba8fb6556b78
+      internalID: -1228451248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7100314a867f14abc0d62548ba3b10
+      internalID: 1582116384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_81
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 132
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7a90949356be043864e59463c964b5
+      internalID: 550656051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_82
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 132
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c37ea7aa4157f54fae19873e6a71924
+      internalID: 668847133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_83
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 132
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40d4d49492aab34cace23dfca3561b7
+      internalID: -1279135907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_84
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 132
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c789a16d31150a54fa4c560a5dbeb3d6
+      internalID: -1215469287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_85
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 132
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae8b60710e3c5846ac0892efbe48c49
+      internalID: 502830779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_86
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 132
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931cc67650789f14a9ff09db995da0ab
+      internalID: -1626804309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_87
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 132
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6984202c5bd69d544aa3ff8f2eb77ec9
+      internalID: -1738619411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_88
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 132
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16a9f4b737560c40a67ae7dfb18034c
+      internalID: -1795911583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_89
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 132
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07f55e58f5ef164897ff89a0df290f8
+      internalID: -239681173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e05ca8deae04524eb4e40658656f089
+      internalID: 950054509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_91
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 88
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75af102298b3a24eaa712154754f016
+      internalID: 1065790873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_92
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 88
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c423b4880bc0004ab25256dd517091c
+      internalID: 1256380301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_93
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 88
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bd95fa99990e94ab8628c9bd56066d
+      internalID: 96738404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_94
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 88
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6c9fb5148d5a94b87026872ef105f9
+      internalID: -1184869659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_95
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 88
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5aebf58f43cbd428e40856790813f1
+      internalID: -369481703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_96
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 88
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46364fe7b1f97a749a2cbdbbcc0b192e
+      internalID: -224132050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_97
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 88
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a16e56796748ae4c9928cde7f6de7e6
+      internalID: 927916597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_98
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 88
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21bc16eda9751704193a57261e304810
+      internalID: 169793484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_99
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 88
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc86dfe7cbe86e046a63423b8816b99c
+      internalID: -413602763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 44
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b032cacd033f3f499c342b0c0d7d668
+      internalID: -889993642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_101
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 44
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a155527c689f2488727c2fce8b6a09
+      internalID: 344923277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_102
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 44
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762c253bcec6f2745a30a21dc052008b
+      internalID: 1150704122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_103
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 44
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0605388c7e426c840ab80e188863022c
+      internalID: 142441783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_104
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 44
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c1c893661fc6c4291be07610538d77
+      internalID: -390799116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_105
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 44
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d720998dc6447aa4fa5a0c2787915f15
+      internalID: -1907163650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_106
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 44
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d9167672b3c4d4e929ee1239f86c66
+      internalID: 818636666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_107
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 44
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db6ec4b69f4ed54d94d2ac1a66cf6c6
+      internalID: 177811547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_108
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 44
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30df3f63350c28143b354a7ddd162e11
+      internalID: -1408496458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_109
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 44
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ed17c6bc3301b4791c4154c1dfb891
+      internalID: -1790429866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7585247ff5f8cc4397296747ded1e78
+      internalID: 630521824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_111
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 0
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb50442a96c68c46aab180b53294254
+      internalID: -898916278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_112
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30dcf2c04ed6b344093fc16ba8f97fae
+      internalID: 603136769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_113
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 0
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4135e7413471264bb536acc411180fe
+      internalID: 2068689000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_114
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb953646abc5d624f9e6a3ff0b574e82
+      internalID: -710952522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_115
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 0
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebb14f7e920ef743bab29be3095a964
+      internalID: 1466627919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_116
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c281ef3f35e80e4429422492caaec9c7
+      internalID: 1174820561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_117
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 0
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cfa72ee30e5b94ab8a0f8c74bc3a64
+      internalID: -2121324136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_118
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 0
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be9fc176f99c7b43bf2adcbe6bd79ec
+      internalID: 219834854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Big Ad 3 SS_119
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 57
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5256bf1086738d43bb6264834b33226
+      internalID: -528164579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Big Ad 3 SS_0: -1818668046
+      Big Ad 3 SS_1: -524889196
+      Big Ad 3 SS_10: -246648053
+      Big Ad 3 SS_100: -889993642
+      Big Ad 3 SS_101: 344923277
+      Big Ad 3 SS_102: 1150704122
+      Big Ad 3 SS_103: 142441783
+      Big Ad 3 SS_104: -390799116
+      Big Ad 3 SS_105: -1907163650
+      Big Ad 3 SS_106: 818636666
+      Big Ad 3 SS_107: 177811547
+      Big Ad 3 SS_108: -1408496458
+      Big Ad 3 SS_109: -1790429866
+      Big Ad 3 SS_11: 1325402243
+      Big Ad 3 SS_110: 630521824
+      Big Ad 3 SS_111: -898916278
+      Big Ad 3 SS_112: 603136769
+      Big Ad 3 SS_113: 2068689000
+      Big Ad 3 SS_114: -710952522
+      Big Ad 3 SS_115: 1466627919
+      Big Ad 3 SS_116: 1174820561
+      Big Ad 3 SS_117: -2121324136
+      Big Ad 3 SS_118: 219834854
+      Big Ad 3 SS_119: -528164579
+      Big Ad 3 SS_12: -924882152
+      Big Ad 3 SS_13: -803334655
+      Big Ad 3 SS_14: -1663267413
+      Big Ad 3 SS_15: 376388309
+      Big Ad 3 SS_16: 1629193446
+      Big Ad 3 SS_17: -2134398778
+      Big Ad 3 SS_18: -831302066
+      Big Ad 3 SS_19: -70797984
+      Big Ad 3 SS_2: -1308620248
+      Big Ad 3 SS_20: -1330043027
+      Big Ad 3 SS_21: 1342232923
+      Big Ad 3 SS_22: -1456811749
+      Big Ad 3 SS_23: -825103995
+      Big Ad 3 SS_24: -1368050633
+      Big Ad 3 SS_25: -1627716338
+      Big Ad 3 SS_26: 228755467
+      Big Ad 3 SS_27: -235484201
+      Big Ad 3 SS_28: 390548836
+      Big Ad 3 SS_29: 942809271
+      Big Ad 3 SS_3: 1373346025
+      Big Ad 3 SS_30: -790808727
+      Big Ad 3 SS_31: -138073742
+      Big Ad 3 SS_32: -1336258575
+      Big Ad 3 SS_33: 1218227480
+      Big Ad 3 SS_34: -1457418162
+      Big Ad 3 SS_35: -221803378
+      Big Ad 3 SS_36: 1709363127
+      Big Ad 3 SS_37: 1419176948
+      Big Ad 3 SS_38: -658912639
+      Big Ad 3 SS_39: -126918261
+      Big Ad 3 SS_4: -1767787765
+      Big Ad 3 SS_40: -886996991
+      Big Ad 3 SS_41: 383499863
+      Big Ad 3 SS_42: -900995195
+      Big Ad 3 SS_43: 272480356
+      Big Ad 3 SS_44: -17323192
+      Big Ad 3 SS_45: 66436277
+      Big Ad 3 SS_46: -823905176
+      Big Ad 3 SS_47: -1567970606
+      Big Ad 3 SS_48: -989472603
+      Big Ad 3 SS_49: -169740043
+      Big Ad 3 SS_5: 1795551223
+      Big Ad 3 SS_50: -166367973
+      Big Ad 3 SS_51: 210190288
+      Big Ad 3 SS_52: -578148143
+      Big Ad 3 SS_53: 1411853946
+      Big Ad 3 SS_54: -897909111
+      Big Ad 3 SS_55: 424412111
+      Big Ad 3 SS_56: 1265566927
+      Big Ad 3 SS_57: -112592869
+      Big Ad 3 SS_58: 197966170
+      Big Ad 3 SS_59: -753926542
+      Big Ad 3 SS_6: -121421866
+      Big Ad 3 SS_60: -1017134392
+      Big Ad 3 SS_61: 1953964695
+      Big Ad 3 SS_62: 741280564
+      Big Ad 3 SS_63: -1263780669
+      Big Ad 3 SS_64: -943972841
+      Big Ad 3 SS_65: 782169020
+      Big Ad 3 SS_66: 1550500471
+      Big Ad 3 SS_67: -62001525
+      Big Ad 3 SS_68: 704805667
+      Big Ad 3 SS_69: -1137223247
+      Big Ad 3 SS_7: -1234118410
+      Big Ad 3 SS_70: -1951865295
+      Big Ad 3 SS_71: -1779200535
+      Big Ad 3 SS_72: -1510356681
+      Big Ad 3 SS_73: 436166092
+      Big Ad 3 SS_74: 627818446
+      Big Ad 3 SS_75: -98288131
+      Big Ad 3 SS_76: -280142129
+      Big Ad 3 SS_77: 1181236893
+      Big Ad 3 SS_78: 516266655
+      Big Ad 3 SS_79: -1228451248
+      Big Ad 3 SS_8: 587228061
+      Big Ad 3 SS_80: 1582116384
+      Big Ad 3 SS_81: 550656051
+      Big Ad 3 SS_82: 668847133
+      Big Ad 3 SS_83: -1279135907
+      Big Ad 3 SS_84: -1215469287
+      Big Ad 3 SS_85: 502830779
+      Big Ad 3 SS_86: -1626804309
+      Big Ad 3 SS_87: -1738619411
+      Big Ad 3 SS_88: -1795911583
+      Big Ad 3 SS_89: -239681173
+      Big Ad 3 SS_9: -933399284
+      Big Ad 3 SS_90: 950054509
+      Big Ad 3 SS_91: 1065790873
+      Big Ad 3 SS_92: 1256380301
+      Big Ad 3 SS_93: 96738404
+      Big Ad 3 SS_94: -1184869659
+      Big Ad 3 SS_95: -369481703
+      Big Ad 3 SS_96: -224132050
+      Big Ad 3 SS_97: 927916597
+      Big Ad 3 SS_98: 169793484
+      Big Ad 3 SS_99: -413602763
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
