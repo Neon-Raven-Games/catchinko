@@ -23,6 +23,7 @@ public class OverWorldMapData
 public class OverWorldInnerLevelData
 {
     public int index;
+    public string enemyName = "Enemy";
     
     public OverWorldInnerLevel eastNeighbor;
     public OverWorldInnerLevel westNeighbor;

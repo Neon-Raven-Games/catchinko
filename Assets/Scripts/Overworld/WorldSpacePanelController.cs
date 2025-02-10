@@ -1,6 +1,7 @@
 using UnityEngine;
 using DG.Tweening;
 using Overworld;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class WorldSpacePanelController : MonoBehaviour
@@ -11,16 +12,19 @@ public class WorldSpacePanelController : MonoBehaviour
     [SerializeField] private float minimizeDuration = 0.3f;
     [SerializeField] private Vector3 hiddenScale = Vector3.zero;
     [SerializeField] private Transform playerTransform;
-    
+
+    [SerializeField] private TextMeshProUGUI enemyNameText;
     private Vector3 _shownScale;
     private Vector3 _defaultPosition;
 
-    private void Awake()
+    private void Start()
     {
-        _shownScale = panelRect.localScale;
-        if (panelRect == null) panelRect = GetComponent<RectTransform>();
-        panelRect.localScale = hiddenScale;
-        _defaultPosition = panelRect.localPosition;
+        if (OverWorldGameManager.CurrentLevel == null)
+        {
+            Debug.LogWarning("OverWorldGameManager.CurrentLevel == null");
+            return;
+        }
+        enemyNameText.text = OverWorldGameManager.CurrentLevel.data.enemyName;
     }
 
     public void PlayButtonLoadScene()
@@ -31,31 +35,16 @@ public class WorldSpacePanelController : MonoBehaviour
     /// <summary>
     /// Animates the panel to pop out of the player's position.
     /// </summary>
-    public void ShowPanel()
+    public void UpdateEnemyName()
     {
-        panelRect.position = playerTransform.position;
-        panelRect.localScale = hiddenScale;
-
-        panelRect.DOScale(_shownScale, popDuration).SetEase(Ease.OutBack);
-        panelRect.DOAnchorPosY(12f, popDuration).SetEase(Ease.OutBack);
-
-        if (canvasGroup != null)
-        {
-            canvasGroup.alpha = 0f;
-            canvasGroup.DOFade(1f, popDuration);
-        }
+        enemyNameText.text = OverWorldGameManager.CurrentLevel.data.enemyName;
     }
 
     /// <summary>
-    /// Animates the panel to minimize and hide.
+    /// Animates the panel to minimize and hide. Removed for button.
     /// </summary>
     public void MinimizePanel()
     {
-        panelRect.DOAnchorPosX(0, minimizeDuration).SetEase(Ease.InBack);
-        panelRect.DOScale(hiddenScale, minimizeDuration).SetEase(Ease.InBack).OnComplete(() =>
-        {
-            if (canvasGroup) canvasGroup.alpha = 0f;
-            panelRect.localPosition = _defaultPosition;
-        });
+
     }
 }

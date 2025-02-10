@@ -14,7 +14,7 @@ public class OverWorldPlayer : MonoBehaviour
     // stats object for the character being played
     // this will have various stats + rebirths
 
-    public void ShowPanel() => worldSpacePanelController.ShowPanel();
+    public void ShowPanel() => worldSpacePanelController.UpdateEnemyName();
     public void HidePanel() => worldSpacePanelController.MinimizePanel();
     
     private void Start()
