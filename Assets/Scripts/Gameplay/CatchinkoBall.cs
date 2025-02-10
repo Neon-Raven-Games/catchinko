@@ -133,7 +133,11 @@ public class CatchinkoBall : MonoBehaviour
 
     private IEnumerator DespawnRoutine(GoalType goal)
     {
-        if (goal == GoalType.Hit) attackSound.Play();
+        if (goal == GoalType.Hit)
+        {
+            attackSound.Play();
+            
+        }
         else if (goal == GoalType.Die) dieSound.Play();
         else missSound.Play();
        

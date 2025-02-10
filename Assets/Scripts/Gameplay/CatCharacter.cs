@@ -36,7 +36,6 @@ namespace Gameplay
             if (health <= 0) CombatController.EndGame();
         }
 
-        // called by the goal zones or combat controller for enemy
         public void Attack()
         {
             _animator.SetTrigger(_SAttack);
