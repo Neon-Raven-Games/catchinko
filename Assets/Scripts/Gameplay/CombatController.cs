@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using Gameplay;
-using Minimalist.Quantity;
 using UnityEngine;
 
 public class CombatController : MonoBehaviour
@@ -31,13 +29,41 @@ public class CombatController : MonoBehaviour
 
         _playing = true;
         StartCoroutine(EnemyAttackRoutine());
+        SetCam();
+    }
+
+    [SerializeField] private SpriteRenderer background;
+
+    private void SetCam()
+    {
+        var size = background.size;
+        Vector2 position = background.transform.position;
+        var xMin = position.x - size.x / 2;
+        var yMin = position.y - size.y / 2;
+
+        var mapBounds = new Rect(xMin, yMin, size.x, size.y);
+        
+        var targetOrthoSize = Mathf.Min(mapBounds.height / 2f, mapBounds.width / (2f * Camera.main.aspect));
+        var cameraHeight = targetOrthoSize * 2f;
+        var cameraWidth = cameraHeight * Camera.main.aspect;
+        var halfCameraWidth = cameraWidth / 2f;
+        var halfCameraHeight = targetOrthoSize;
+
+        var clampedPosition = (Vector3) position;
+        clampedPosition.x = Mathf.Clamp(clampedPosition.x, mapBounds.xMin + halfCameraWidth,
+            mapBounds.xMax - halfCameraWidth);
+        clampedPosition.y = Mathf.Clamp(clampedPosition.y, mapBounds.yMin + halfCameraHeight,
+            mapBounds.yMax - halfCameraHeight);
+        clampedPosition.z = -8f;
+        
+        Camera.main.transform.position = clampedPosition;
     }
 
     public static void EndGame()
     {
         _instance._playing = false;
         _instance.StopAllCoroutines();
-        
+
         GameResultsManager.GameOver(!_instance.enemyCharacter.IsAlive);
     }
 }

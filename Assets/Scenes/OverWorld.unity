@@ -10584,7 +10584,6 @@ MonoBehaviour:
   panelRect: {fileID: 1765855925}
   popDuration: 0.5
   minimizeDuration: 0.3
-  hiddenScale: {x: 0, y: 0, z: 0}
   playerTransform: {fileID: 1290408282}
   enemyNameText: {fileID: 1736386623}
 --- !u!224 &1065608091 stripped
