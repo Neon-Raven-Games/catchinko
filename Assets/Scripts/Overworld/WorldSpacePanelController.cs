@@ -1,5 +1,4 @@
 using UnityEngine;
-using DG.Tweening;
 using Overworld;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -10,7 +9,6 @@ public class WorldSpacePanelController : MonoBehaviour
     [SerializeField] private RectTransform panelRect;
     [SerializeField] private float popDuration = 0.5f;
     [SerializeField] private float minimizeDuration = 0.3f;
-    [SerializeField] private Vector3 hiddenScale = Vector3.zero;
     [SerializeField] private Transform playerTransform;
 
     [SerializeField] private TextMeshProUGUI enemyNameText;

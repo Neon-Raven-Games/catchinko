@@ -10,20 +10,6 @@ public class OverWorldPlayer : MonoBehaviour
     [SerializeField] private int maxHealth;
     
     [SerializeField] private int catCash;
-    
-    // stats object for the character being played
-    // this will have various stats + rebirths
-
     public void ShowPanel() => worldSpacePanelController.UpdateEnemyName();
     public void HidePanel() => worldSpacePanelController.MinimizePanel();
-    
-    private void Start()
-    {
-        
-    }
-
-    private void Update()
-    {
-        
-    }
 }

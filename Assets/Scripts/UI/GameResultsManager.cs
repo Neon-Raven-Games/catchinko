@@ -54,10 +54,14 @@ public class GameResultsManager : MonoBehaviour
 
     private void ProcessPlayerLoss()
     {
-        if (ballCount > 0)
+        if (ballCount > 25)
         {
             ballCount -= 5;
             ballCountText.text = ballCount.ToString();
+        }
+        else
+        {
+            ballCount = 25;
         }
         
         // can we remove this?

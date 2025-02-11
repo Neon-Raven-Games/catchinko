@@ -145,7 +145,14 @@ namespace Overworld
         {
             if (curScene.buildIndex == 0)
             {
-                if (GameResultsManager.lastGameWon) _currentLevel.Complete();
+                if (GameResultsManager.lastGameWon)
+                {
+                    // todo, make the percentage complete unlock here
+                    // if the percentage complete is 100%, unlock the next boss.
+                    
+                    _currentLevel.Complete();
+                }
+                
                 player.gameObject.SetActive(true);
                 uIObject.SetActive(true);
                 overWorldObject.SetActive(true);
@@ -224,7 +231,7 @@ namespace Overworld
 
         public static List<OverWorldInnerLevel> GetInnerLevels(CatBoss targetCatBoss)
         {
-            return _levelDictionary[targetCatBoss].backgroundSprite.parent.GetComponent<OverWorldMap>().levels;
+            return _levelDictionary[targetCatBoss].backgroundSprite.GetComponentInParent<OverWorldMap>().levels;
         }
 
         public static void SetPlayerToProperPosition()
