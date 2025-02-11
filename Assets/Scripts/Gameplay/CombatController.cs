@@ -38,7 +38,6 @@ public class CombatController : MonoBehaviour
         _instance._playing = false;
         _instance.StopAllCoroutines();
         
-        if (GameResultsManager.ballCount <= 0) GameResultsManager.GameOver(false);
-        else GameResultsManager.GameOver(!_instance.enemyCharacter.IsAlive);
+        GameResultsManager.GameOver(!_instance.enemyCharacter.IsAlive);
     }
 }

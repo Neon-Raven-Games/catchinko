@@ -54,9 +54,12 @@ public class GameResultsManager : MonoBehaviour
 
     private void ProcessPlayerLoss()
     {
-        // remove balls
-        ballCount -= 5;
-        ballCountText.text = ballCount.ToString();
+        if (ballCount > 0)
+        {
+            ballCount -= 5;
+            ballCountText.text = ballCount.ToString();
+        }
+        
         // can we remove this?
         _lastAward = -1f;
         Debug.Log($"Reward: {_lastAward}. Player Lost :( pass performance stats for mercy or something?");
